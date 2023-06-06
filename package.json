@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "prettier": "prettier --ignore-path .gitignore --cache --write .",
+    "format": "prettier --ignore-path .gitignore --cache --write .",
     "test": "echo 'no tests'"
   },
   "prettier": {
