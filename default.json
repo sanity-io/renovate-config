@@ -1,0 +1,37 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Use curated presets maintained by [Sanity](https://www.sanity.io/?utm_source=github&utm_medium=referral&utm_campaign=ecosystem-renovate-preset). See [docs](https://github.com/sanity-io/renovate-config#readme) for advanced usage.",
+  "extends": [
+    "github>sanity-io/renovate-config:base",
+    "github>sanity-io/renovate-config:security",
+    "github>sanity-io/renovate-config:strategy",
+    "github>sanity-io/renovate-config:labels",
+    "github>sanity-io/renovate-config:node-lts",
+    "github>sanity-io/renovate-config:schedule",
+    "github>sanity-io/renovate-config:group-recommended",
+    "github>sanity-io/renovate-config:group-non-major",
+    "github>sanity-io/renovate-config:workarounds-esm",
+    "github>sanity-io/renovate-config:dedupe"
+  ],
+  "onboardingConfigFileName": ".github/renovate.json",
+  "configMigration": true,
+  "migratePresets": {
+    "github>sanity-io/renovate-presets//ecosystem/auto": "github>sanity-io/renovate-config",
+    "github>sanity-io/renovate-presets//ecosystem/automerge": "github>sanity-io/renovate-config:automerge",
+    "github>sanity-io/renovate-presets//ecosystem/base": "github>sanity-io/renovate-config:base",
+    "github>sanity-io/renovate-presets//ecosystem/branding": "github>sanity-io/renovate-config:branding",
+    "github>sanity-io/renovate-presets//ecosystem/group": "github>sanity-io/renovate-config:group-recommended",
+    "github>sanity-io/renovate-presets//ecosystem/group-after-types": "github>sanity-io/renovate-config:group-non-major",
+    "github>sanity-io/renovate-presets//ecosystem/group-by-pattern": "github>sanity-io/renovate-config:group-recommended",
+    "github>sanity-io/renovate-presets//ecosystem/group-update-types": "github>sanity-io/renovate-config:group-non-major",
+    "github>sanity-io/renovate-presets//ecosystem/labels": "github>sanity-io/renovate-config:labels",
+    "github>sanity-io/renovate-presets//ecosystem/node": "github>sanity-io/renovate-config:node-lts",
+    "github>sanity-io/renovate-presets//ecosystem/schedule": "github>sanity-io/renovate-config:schedule",
+    "github>sanity-io/renovate-presets//ecosystem/security": "github>sanity-io/renovate-config:security",
+    "github>sanity-io/renovate-presets//ecosystem/strategy": "github>sanity-io/renovate-config:strategy",
+    "github>sanity-io/renovate-presets//ecosystem/studio-v2": "github>sanity-io/renovate-config:studio-v2",
+    "github>sanity-io/renovate-presets//ecosystem/studio-v3": "github>sanity-io/renovate-config:studio-v3",
+    "github>sanity-io/renovate-presets//ecosystem/workaround-esm": "github>sanity-io/renovate-config:workarounds-esm",
+    "github>sanity-io/renovate-presets:sanity-template": "github>sanity-io/renovate-config"
+  }
+}
