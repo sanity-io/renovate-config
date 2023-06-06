@@ -1,0 +1,18 @@
+{
+  "type": "module",
+  "scripts": {
+    "prettier": "prettier --ignore-path .gitignore --cache --write .",
+    "test": "echo 'no tests'"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "dependencies": {
+   
+  },
+  "devDependencies": {
+    "prettier": "^2.8.5",
+    "prettier-plugin-packagejson": "^2.4.3"
+  }
+}
