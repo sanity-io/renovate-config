@@ -1,0 +1,47 @@
+---
+name: Maintain consistent json sorting
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/*.json'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    name: Is json sorted? 🤔
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          cache: npm
+          node-version: lts/*
+      - run: npm ci --ignore-scripts
+      - run: npm run update:sorting
+      - uses: tibdex/github-app-token@b62528385c34dbc9f38e5f4225ac829252d1ea92 # v1
+        id: generate-token
+        if: ${{ env.HAVE_ECOSPARK_APP_ID == 'true' }}
+        env:
+          HAVE_ECOSPARK_APP_ID: ${{ secrets.ECOSPARK_APP_ID != '' }}
+        with:
+          app_id: ${{ secrets.ECOSPARK_APP_ID }}
+          private_key: ${{ secrets.ECOSPARK_APP_PRIVATE_KEY }}
+      - uses: peter-evans/create-pull-request@284f54f989303d2699d373481a0cfa13ad5a6666 # v5
+        if: ${{ steps.generate-token.outputs.token != '' }}
+        with:
+          author: github-actions <41898282+github-actions[bot]@users.noreply.github.com>
+          body: I ran `npm run update:sorting` 👨‍💻
+          branch: actions/create-sorting-pr
+          commit-message: 'chore(sorting): 🤖 ✨'
+          labels: 🤖 bot
+          title: 'chore(sorting): apply sorting'
+          token: ${{ steps.generate-token.outputs.token }}

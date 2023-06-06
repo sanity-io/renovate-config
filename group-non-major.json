@@ -1,0 +1,12 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Group all updates except `major` into its own PR, when possible.",
+  "packageRules": [
+    {
+      "description": "Groups every update type except major",
+      "excludeDepNames": ["npm", "pnpm", "yarn"],
+      "groupName": "non-major",
+      "matchUpdateTypes": ["digest", "minor", "patch"]
+    }
+  ]
+}
