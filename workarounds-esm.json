@@ -1,0 +1,60 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Workaround packages that are [Pure ESM](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c).",
+  "packageRules": [
+    {
+      "allowedVersions": "<=2",
+      "packageNames": [
+        "arrify",
+        "is-retry-allowed",
+        "is-stream",
+        "p-filter",
+        "to-readable-stream"
+      ]
+    },
+    {
+      "allowedVersions": "<=3",
+      "packageNames": [
+        "clean-stack",
+        "file-url",
+        "git-remote-origin-url",
+        "leven",
+        "p-any",
+        "pkg-up"
+      ]
+    },
+    {
+      "allowedVersions": "<=4",
+      "packageNames": [
+        "chalk",
+        "log-symbols",
+        "npm-run-path",
+        "p-map",
+        "p-props",
+        "p-timeout",
+        "string-width",
+        "xdg-basedir"
+      ]
+    },
+    {
+      "allowedVersions": "<=5",
+      "packageNames": ["boxen", "execa", "ora", "pkg-dir", "pretty-bytes"]
+    },
+    {
+      "allowedVersions": "<=6",
+      "packageNames": ["camelcase", "del", "into-stream", "p-queue"]
+    },
+    {
+      "allowedVersions": "<=7",
+      "packageNames": ["decompress-response", "pretty-ms", "read-pkg-up"]
+    },
+    { "allowedVersions": "<=8", "packageNames": ["inquirer"] },
+    { "allowedVersions": "<=9", "packageNames": ["meow"] },
+    { "allowedVersions": "<=11", "packageNames": ["globby"] },
+    {
+      "description": "node-fetch v3 and later is ESM only, which makes zero sense as node v18 is introducing native fetch support. The times you need node-fetch is in older node versions. This preset tells renovatebot to stay on v2 unless manually updating to v3 first",
+      "followTag": "cjs",
+      "packageNames": ["node-fetch"]
+    }
+  ]
+}

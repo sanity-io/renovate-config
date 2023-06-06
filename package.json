@@ -1,0 +1,26 @@
+{
+  "type": "module",
+  "scripts": {
+    "format": "prettier --ignore-path .gitignore --cache --write .",
+    "test": "zx scripts/validate-config.js",
+    "update:node": "node scripts/update-node-lts.js",
+    "postupdate:node": "npx prettier --write node-lts.json",
+    "update:sorting": "zx scripts/update-sorting.js",
+    "postupdate:sorting": "npm run format"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "dependencies": {
+    "@types/node": "^18.0.0",
+    "@types/sort-object-keys": "^1.1.0",
+    "renovate": "35.113.2",
+    "sort-object-keys": "^1.1.3",
+    "zx": "^7.2.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.1",
+    "prettier-plugin-packagejson": "^2.4.3"
+  }
+}
