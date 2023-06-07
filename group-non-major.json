@@ -1,9 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Group all updates except `major` into its own PR, when possible.",
-  "lockFileMaintenance": {
-    "groupName": "lock-file-maintenance"
-  },
   "packageRules": [
     {
       "description": "Groups every update type except major",
