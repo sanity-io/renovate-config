@@ -17,8 +17,8 @@
       "rangeStrategy": "widen"
     },
     {
-      "groupName": "corepack",
       "dependencyDashboardApproval": true,
+      "groupName": "corepack",
       "matchDepTypes": ["packageManager"],
       "matchManagers": ["npm"]
     }
