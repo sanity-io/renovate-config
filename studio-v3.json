@@ -23,6 +23,5 @@
       "replacementVersion": "^3.0.0",
       "schedule": ["at any time"]
     }
-  ],
-  "ignorePresets": ["group:sanityMonorepo"]
+  ]
 }

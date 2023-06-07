@@ -87,6 +87,5 @@
         "prettier-package-json"
       ]
     }
-  ],
-  "ignorePresets": ["group:sanityMonorepo"]
+  ]
 }
