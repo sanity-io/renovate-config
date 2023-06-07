@@ -5,7 +5,8 @@
     {
       "description": "Groups every update type except major",
       "groupName": "non-major",
-      "matchUpdateTypes": ["digest", "minor", "patch"]
+      "matchUpdateTypes": ["digest", "minor", "patch"],
+      "excludeDepNames": ["npm", "pnpm", "yarn"]
     }
   ]
 }
