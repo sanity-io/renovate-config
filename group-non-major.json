@@ -1,0 +1,37 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Group all updates except major into its own PR, when possible.",
+  "packageRules": [
+    {
+      "description": "Groups every update type except major",
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "pinDigest",
+        "digest",
+        "lockFileMaintenance",
+        "rollback",
+        "bump",
+        "replacement"
+      ],
+      "groupName": "non-major"
+    },
+    {
+      "description": "Also exclude peerDependencies and engines",
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "pinDigest",
+        "digest",
+        "lockFileMaintenance",
+        "rollback",
+        "bump",
+        "replacement"
+      ],
+      "depTypeList": ["peerDependencies", "engines"],
+      "groupName": null
+    }
+  ]
+}

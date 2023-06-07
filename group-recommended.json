@@ -1,0 +1,101 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["group:linters", "group:postcss"],
+  "packageRules": [
+    {
+      "groupName": "three packages",
+      "packageNames": ["three"],
+      "packagePatterns": ["^@react-three/"]
+    },
+    {
+      "extends": ["group:sanityMonorepo"],
+      "groupName": "sanity packages",
+      "packageNames": ["next-sanity", "sanity"],
+      "packagePatterns": ["^@portabletext/", "^@sanity/", "sanity-plugin-*"],
+      "schedule": ["at any time"]
+    },
+    {
+      "groupName": "typescript packages",
+      "packageNames": ["type-fest", "typescript"],
+      "packagePatterns": ["^@types/"]
+    },
+    {
+      "groupName": "reach packages",
+      "packagePatterns": ["^@reach/"]
+    },
+    {
+      "extends": ["monorepo:react"],
+      "groupName": "react packages",
+      "packageNames": ["prop-types"]
+    },
+    {
+      "groupName": "grunt packages",
+      "packageNames": ["grunt", "load-grunt-tasks"],
+      "packagePatterns": ["^grunt-"]
+    },
+    {
+      "groupName": "webpack packages",
+      "packageNames": [
+        "babel-loader",
+        "css-loader",
+        "file-loader",
+        "mini-css-extract-plugin",
+        "mustache-loader",
+        "postcss-loader",
+        "raw-loader",
+        "sass-loader",
+        "source-map-loader",
+        "style-loader",
+        "url-loader",
+        "vue-loader"
+      ],
+      "packagePatterns": ["-webpack-plugin$", "^webpack"]
+    },
+    {
+      "groupName": "rollup packages",
+      "packagePatterns": ["^@rollup/", "^rollup"]
+    },
+    {
+      "groupName": "scroll-into-view",
+      "packagePatterns": ["scroll-into-view"]
+    },
+    {
+      "groupName": "popmotion",
+      "packageNames": ["popmotion", "stylefire"]
+    },
+    {
+      "groupName": "refractor",
+      "packageNames": ["react-refractor", "refractor"]
+    },
+    {
+      "groupName": "semantic-release",
+      "packageNames": ["@sanity/semantic-release-preset", "semantic-release"]
+    },
+    {
+      "groupName": "ioredis",
+      "packageNames": [
+        "@types/ioredis",
+        "@types/ioredis-mock",
+        "ioredis",
+        "ioredis-mock"
+      ]
+    },
+    {
+      "extends": ["monorepo:babel", "monorepo:babel6"],
+      "groupName": "babel"
+    },
+    {
+      "extends": "packages:linters",
+      "groupName": "linters",
+      "packageNames": [
+        "@nuxtjs/eslint-config",
+        "babel-eslint",
+        "husky",
+        "lint-staged",
+        "prettier",
+        "prettier-eslint-cli",
+        "prettier-package-json"
+      ]
+    }
+  ]
+}

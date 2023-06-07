@@ -2,15 +2,15 @@
   "type": "module",
   "scripts": {
     "format": "prettier --ignore-path .gitignore --cache --write .",
-    "test": "echo 'no tests'"
+    "test": "echo 'no tests'",
+    "update:node": "node scripts/update-node-lts.js",
+    "postupdate:node": "npx prettier --write node-lts.json"
   },
   "prettier": {
     "semi": false,
     "singleQuote": true
   },
-  "dependencies": {
-   
-  },
+  "dependencies": {},
   "devDependencies": {
     "prettier": "^2.8.5",
     "prettier-plugin-packagejson": "^2.4.3"

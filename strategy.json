@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [":widenPeerDependencies"],
+  "packageRules": [
+    {
+      "depTypeList": ["dependencies", "devDependencies", "resolutions"],
+      "rangeStrategy": "update-lockfile"
+    }
+  ]
+}

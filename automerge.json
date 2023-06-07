@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Automerge changes to lockfiles, and minor/patch updates to dependencies and resolutions",
+  "lockFileMaintenance": {
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "automerge": true,
+      "depTypeList": ["dependencies", "devDependencies", "resolutions"],
+      "updateTypes": ["minor", "patch"]
+    }
+  ]
+}

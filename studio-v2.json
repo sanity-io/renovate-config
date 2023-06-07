@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Skip PRs for React v18 and later as Sanity Studio v2 doesn't support it",
+  "packageRules": [
+    {
+      "allowedVersions": "<=17",
+      "matchPackagePrefixes": ["@types/react", "react"]
+    }
+  ]
+}
