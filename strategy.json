@@ -1,10 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [":widenPeerDependencies"],
+  "description": "Always widen `peerDependencies` and `engines`, while other types like `dependencies`, `devDependencies` are `update-lockfile`.",
   "packageRules": [
     {
-      "depTypeList": ["dependencies", "devDependencies", "resolutions"],
+      "matchDepTypes": ["dependencies", "optionalDependencies", "devDependencies", "resolutions", "overrides"],
       "rangeStrategy": "update-lockfile"
+    },
+    {
+      "matchDepTypes": ["peerDependencies", "engines"],
+      "rangeStrategy": "widen"
     }
   ]
 }
