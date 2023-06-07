@@ -9,6 +9,11 @@
     {
       "matchDepTypes": ["peerDependencies", "engines"],
       "rangeStrategy": "widen"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["packageManager"],
+      "dependencyDashboardApproval": true
     }
   ]
 }

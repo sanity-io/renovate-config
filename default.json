@@ -8,8 +8,8 @@
     "github>sanity-io/renovate-config:labels",
     "github>sanity-io/renovate-config:node-lts",
     "github>sanity-io/renovate-config:schedule",
-    "github>sanity-io/renovate-config:group-recommended",
     "github>sanity-io/renovate-config:group-non-major",
+    "github>sanity-io/renovate-config:group-recommended",
     "github>sanity-io/renovate-config:workarounds-esm",
     "github>sanity-io/renovate-config:dedupe"
   ],
