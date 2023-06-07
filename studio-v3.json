@@ -11,8 +11,8 @@
     {
       "description": "Group all Sanity Studio dependencies together",
       "extends": ["group:sanityMonorepo"],
-      "matchPackagePrefixes": ["@portabletext", "@sanity", "sanity-"],
-      "matchPackageNames": ["hydrogen-sanity", "next-sanity"]
+      "matchPackageNames": ["hydrogen-sanity", "next-sanity"],
+      "matchPackagePrefixes": ["@portabletext", "@sanity", "sanity-"]
     },
     {
       "description": "Upgrade Sanity Studio v2 dependencies to v3",
