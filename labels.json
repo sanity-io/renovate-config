@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Assign '📦 deps' and '🤖 bot' labels, and for major updates '⚠️ major'",
+  "description": "Assign `📦 deps` and `🤖 bot` labels, and for major updates `⚠️ major`",
   "packageRules": [
     {
       "labels": ["📦 deps", "🤖 bot"]

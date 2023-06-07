@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Workaround packages that have moved to become ESM-only",
+  "description": "Workaround packages that are [Pure ESM](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c).",
   "packageRules": [
     {
       "allowedVersions": "<=2",
