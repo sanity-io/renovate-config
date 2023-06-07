@@ -64,13 +64,6 @@
       "description": "node-fetch v3 and later is ESM only, which makes zero sense as node v18 is introducing native fetch support. The times you need node-fetch is in older node versions. This preset tells renovatebot to stay on v2 unless manually updating to v3 first",
       "followTag": "cjs",
       "packageNames": ["node-fetch"]
-    },
-    {
-      "allowedVersions": "<=27",
-      "description": "jest v28 and later introduces a very problematic behavior with ESM that doesn't interop out of the box with Node16's ESM support",
-      "extends": ["monorepo:jest"],
-      "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
-      "packageNames": ["@types/jest", "ts-jest"]
     }
   ]
 }
