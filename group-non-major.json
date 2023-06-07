@@ -4,8 +4,7 @@
   "packageRules": [
     {
       "description": "Groups every update type except major",
-      "groupSlug": "non-major",
-      "matchPackagePatterns": ["*"],
+      "groupName": "non-major",
       "matchUpdateTypes": [
         "digest",
         "patch",
