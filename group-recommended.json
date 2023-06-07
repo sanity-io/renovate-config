@@ -4,38 +4,48 @@
   "packageRules": [
     {
       "groupName": "three packages",
-      "packageNames": ["three"],
-      "packagePatterns": ["^@react-three/"]
+      "matchPackageNames": ["three"],
+      "matchPackagePatterns": ["^@react-three/"]
     },
     {
-      "extends": ["group:sanityMonorepo"],
+      "extends": ["monorepo:sanity"],
       "groupName": "sanity packages",
-      "packageNames": ["next-sanity", "sanity"],
-      "packagePatterns": ["^@portabletext/", "^@sanity/", "sanity-plugin-*"],
+      "matchUpdateTypes": [
+        "digest",
+        "patch",
+        "minor",
+        "major"
+      ],
+      "matchPackageNames": ["next-sanity", "sanity"],
+      "matchPackagePatterns": [
+        "^@portabletext/",
+        "^@sanity/",
+        "sanity-plugin-*"
+      ],
       "schedule": ["at any time"]
     },
     {
       "groupName": "typescript packages",
-      "packageNames": ["type-fest", "typescript"],
-      "packagePatterns": ["^@types/"]
+      "matchPackageNames": ["type-fest", "typescript"],
+      "matchPackagePatterns": ["^@types/"]
     },
     {
       "groupName": "reach packages",
-      "packagePatterns": ["^@reach/"]
+      "matchPackagePatterns": ["^@reach/"]
     },
     {
       "extends": ["monorepo:react"],
       "groupName": "react packages",
-      "packageNames": ["prop-types"]
+      "matchPackageNames": ["prop-types"]
     },
     {
       "groupName": "grunt packages",
-      "packageNames": ["grunt", "load-grunt-tasks"],
-      "packagePatterns": ["^grunt-"]
+      "matchPackageNames": ["grunt", "load-grunt-tasks"],
+      "matchPackagePatterns": ["^grunt-"]
     },
     {
       "groupName": "webpack packages",
-      "packageNames": [
+      "matchPackageNames": [
         "babel-loader",
         "css-loader",
         "file-loader",
@@ -49,31 +59,34 @@
         "url-loader",
         "vue-loader"
       ],
-      "packagePatterns": ["-webpack-plugin$", "^webpack"]
+      "matchPackagePatterns": ["-webpack-plugin$", "^webpack"]
     },
     {
       "groupName": "rollup packages",
-      "packagePatterns": ["^@rollup/", "^rollup"]
+      "matchPackagePatterns": ["^@rollup/", "^rollup"]
     },
     {
       "groupName": "scroll-into-view",
-      "packagePatterns": ["scroll-into-view"]
+      "matchPackagePatterns": ["scroll-into-view"]
     },
     {
       "groupName": "popmotion",
-      "packageNames": ["popmotion", "stylefire"]
+      "matchPackageNames": ["popmotion", "stylefire"]
     },
     {
       "groupName": "refractor",
-      "packageNames": ["react-refractor", "refractor"]
+      "matchPackageNames": ["react-refractor", "refractor"]
     },
     {
       "groupName": "semantic-release",
-      "packageNames": ["@sanity/semantic-release-preset", "semantic-release"]
+      "matchPackageNames": [
+        "@sanity/semantic-release-preset",
+        "semantic-release"
+      ]
     },
     {
       "groupName": "ioredis",
-      "packageNames": [
+      "matchPackageNames": [
         "@types/ioredis",
         "@types/ioredis-mock",
         "ioredis",
@@ -85,9 +98,9 @@
       "groupName": "babel"
     },
     {
-      "extends": "packages:linters",
+      "extends": ["packages:linters"],
       "groupName": "linters",
-      "packageNames": [
+      "matchPackageNames": [
         "@nuxtjs/eslint-config",
         "babel-eslint",
         "husky",
