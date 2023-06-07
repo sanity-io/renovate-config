@@ -3,11 +3,17 @@
   "description": "Always widen `peerDependencies` and `engines`, while other types like `dependencies`, `devDependencies` are `update-lockfile`.",
   "packageRules": [
     {
-      "matchDepTypes": ["dependencies", "optionalDependencies", "devDependencies", "resolutions", "overrides"],
+      "matchDepTypes": [
+        "dependencies",
+        "devDependencies",
+        "optionalDependencies",
+        "overrides",
+        "resolutions"
+      ],
       "rangeStrategy": "update-lockfile"
     },
     {
-      "matchDepTypes": ["peerDependencies", "engines"],
+      "matchDepTypes": ["engines", "peerDependencies"],
       "rangeStrategy": "widen"
     },
     {
