@@ -27,7 +27,7 @@ jobs:
           node-version: lts/*
       - run: npm ci --ignore-scripts
       - run: npm run update:sorting
-      - uses: tibdex/github-app-token@b62528385c34dbc9f38e5f4225ac829252d1ea92 # v1
+      - uses: tibdex/github-app-token@021a2405c7f990db57f5eae5397423dcc554159c # v1
         id: generate-token
         if: ${{ env.HAVE_ECOSPARK_APP_ID == 'true' }}
         env:
