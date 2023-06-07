@@ -14,8 +14,8 @@
   "dependencies": {
     "@types/node": "^18.0.0",
     "@types/prettier": "^2.7.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
     "@types/sort-object-keys": "^1.1.0",
     "fast-glob": "^2.0.0",
     "json-schema-remote": "^1.6.0",
