@@ -13,8 +13,8 @@
       "schedule": ["before 3am on Monday"]
     },
     {
-      "depTypeList": ["engines", "packageManager"],
-      "extends": ["schedule:yearly"]
+      "extends": ["schedule:yearly"],
+      "depTypeList": ["engines", "packageManager"]
     }
   ]
 }

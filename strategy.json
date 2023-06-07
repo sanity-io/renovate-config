@@ -17,9 +17,9 @@
       "rangeStrategy": "widen"
     },
     {
-      "matchManagers": ["npm"],
+      "dependencyDashboardApproval": true,
       "matchDepTypes": ["packageManager"],
-      "dependencyDashboardApproval": true
+      "matchManagers": ["npm"]
     }
   ]
 }
