@@ -1,21 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Use best practices for [Sanity Studio v3](https://www.sanity.io/studio?utm_source=github&utm_medium=referral&utm_campaign=ecosystem-renovate-preset) development.",
-  "ignorePresets": ["group:sanityMonorepo"],
   "packageRules": [
     {
       "description": "Use the latest major of React that is supported by Sanity Studio v3",
       "allowedVersions": "<=18",
       "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
       "matchPackagePrefixes": ["@types/react", "react"]
-    },
-    {
-      "description": "Group all Sanity Studio dependencies together",
-      "extends": ["monorepo:sanity"],
-      "groupName": "sanity packages",
-      "matchPackageNames": ["hydrogen-sanity", "next-sanity"],
-      "matchPackagePrefixes": ["@portabletext", "@sanity", "sanity-"],
-      "matchUpdateTypes": ["digest", "major", "minor", "patch"]
     },
     {
       "description": "Upgrade Sanity Studio v2 dependencies to v3",
