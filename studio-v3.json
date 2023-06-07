@@ -10,7 +10,14 @@
     },
     {
       "description": "Group all Sanity Studio dependencies together",
-      "extends": ["group:sanityMonorepo"],
+      "extends": ["monorepo:sanity"],
+      "groupName": "sanity packages",
+      "matchUpdateTypes": [
+        "digest",
+        "patch",
+        "minor",
+        "major"
+      ],
       "matchPackageNames": ["hydrogen-sanity", "next-sanity"],
       "matchPackagePrefixes": ["@portabletext", "@sanity", "sanity-"]
     },
