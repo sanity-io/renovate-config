@@ -1,24 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["group:linters", "group:postcss"],
-  "ignorePresets": ["group:sanityMonorepo"],
   "packageRules": [
     {
       "groupName": "three packages",
       "matchPackageNames": ["three"],
       "matchPackagePatterns": ["^@react-three/"]
-    },
-    {
-      "extends": ["monorepo:sanity"],
-      "groupName": "sanity packages",
-      "matchPackageNames": ["next-sanity", "sanity"],
-      "matchPackagePatterns": [
-        "^@portabletext/",
-        "^@sanity/",
-        "sanity-plugin-*"
-      ],
-      "matchUpdateTypes": ["digest", "major", "minor", "patch"],
-      "schedule": ["at any time"]
     },
     {
       "groupName": "typescript packages",
