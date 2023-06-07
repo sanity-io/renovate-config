@@ -1,7 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["group:linters", "group:postcss"],
-  "ignorePresets": ["group:sanityMonorepo"],
   "packageRules": [
     {
       "groupName": "three packages",
@@ -100,5 +99,6 @@
         "prettier-package-json"
       ]
     }
-  ]
+  ],
+  "ignorePresets": ["group:sanityMonorepo"]
 }
