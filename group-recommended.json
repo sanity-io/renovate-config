@@ -10,12 +10,7 @@
     {
       "extends": ["monorepo:sanity"],
       "groupName": "sanity packages",
-      "matchUpdateTypes": [
-        "digest",
-        "patch",
-        "minor",
-        "major"
-      ],
+      "matchUpdateTypes": ["digest", "patch", "minor", "major"],
       "matchPackageNames": ["next-sanity", "sanity"],
       "matchPackagePatterns": [
         "^@portabletext/",
