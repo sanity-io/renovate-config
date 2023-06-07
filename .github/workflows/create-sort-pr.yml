@@ -45,4 +45,3 @@ jobs:
           labels: 🤖 bot
           title: 'chore(sorting): apply sorting'
           token: ${{ steps.generate-token.outputs.token }}
-  

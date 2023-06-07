@@ -48,18 +48,9 @@
       "allowedVersions": "<=7",
       "packageNames": ["decompress-response", "pretty-ms", "read-pkg-up"]
     },
-    {
-      "allowedVersions": "<=8",
-      "packageNames": ["inquirer"]
-    },
-    {
-      "allowedVersions": "<=9",
-      "packageNames": ["meow"]
-    },
-    {
-      "allowedVersions": "<=11",
-      "packageNames": ["globby"]
-    },
+    { "allowedVersions": "<=8", "packageNames": ["inquirer"] },
+    { "allowedVersions": "<=9", "packageNames": ["meow"] },
+    { "allowedVersions": "<=11", "packageNames": ["globby"] },
     {
       "description": "node-fetch v3 and later is ESM only, which makes zero sense as node v18 is introducing native fetch support. The times you need node-fetch is in older node versions. This preset tells renovatebot to stay on v2 unless manually updating to v3 first",
       "followTag": "cjs",

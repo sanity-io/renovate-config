@@ -24,10 +24,7 @@
       "matchPackageNames": ["type-fest", "typescript"],
       "matchPackagePatterns": ["^@types/"]
     },
-    {
-      "groupName": "reach packages",
-      "matchPackagePatterns": ["^@reach/"]
-    },
+    { "groupName": "reach packages", "matchPackagePatterns": ["^@reach/"] },
     {
       "extends": ["monorepo:react"],
       "groupName": "react packages",
@@ -88,10 +85,7 @@
         "ioredis-mock"
       ]
     },
-    {
-      "extends": ["monorepo:babel", "monorepo:babel6"],
-      "groupName": "babel"
-    },
+    { "extends": ["monorepo:babel", "monorepo:babel6"], "groupName": "babel" },
     {
       "extends": ["packages:linters"],
       "groupName": "linters",

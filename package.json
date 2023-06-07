@@ -5,7 +5,8 @@
     "test": "zx scripts/validate-config.js",
     "update:node": "node scripts/update-node-lts.js",
     "postupdate:node": "npx prettier --write node-lts.json",
-    "update:sorting": "zx scripts/update-sorting.js"
+    "update:sorting": "zx scripts/update-sorting.js",
+    "postupdate:sorting": "npm run format"
   },
   "prettier": {
     "semi": false,

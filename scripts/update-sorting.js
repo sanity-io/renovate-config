@@ -11,7 +11,6 @@ const files = await glob(['./*.json', '.github/renovate.json'], {
 for (const file of files) {
   const json = await fs.readJson(file)
   await fs.writeJson(file, json, {
-    spaces: 2,
     replacer: (key, value) => {
       // Never sort the "extends" key, as ordering affect the onboarding PR detailed description
       if (key === 'extends') {
@@ -51,5 +50,3 @@ for (const file of files) {
     },
   })
 }
-
-await $`prettier --ignore-path .gitignore --write *.json`
