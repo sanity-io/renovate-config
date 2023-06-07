@@ -2,23 +2,19 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Group all updates except `major` into its own PR, when possible.",
   "lockFileMaintenance": {
-    "commitMessageAction": "Update"
+    "groupName": "lock-file-maintenance"
   },
   "packageRules": [
     {
       "description": "Groups every update type except major",
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-non-major",
+      "matchPackagePatterns": ["*"],
       "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "pin",
-        "pinDigest",
         "digest",
-        "lockFileMaintenance",
-        "rollback",
-        "bump",
-        "replacement"
-      ],
-      "groupName": "non-major"
+        "patch",
+        "minor"
+      ]
     }
   ]
 }
