@@ -13,7 +13,8 @@
       "matchUpdateTypes": [
         "digest",
         "patch",
-        "minor"
+        "minor",
+        "lockFileMaintenance"
       ]
     }
   ]
