@@ -4,9 +4,5 @@
     ":semanticCommits",
     "config:base",
     "github>sanity-io/renovate-config:branding"
-  ],
-  "lockFileMaintenance": {
-    "enabled": true
-
-  }
+  ]
 }
