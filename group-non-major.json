@@ -4,14 +4,12 @@
   "packageRules": [
     {
       "description": "Groups every update type except major",
-      "groupName": "all non-major dependencies",
-      "groupSlug": "all-non-major",
+      "groupSlug": "non-major",
       "matchPackagePatterns": ["*"],
       "matchUpdateTypes": [
         "digest",
         "patch",
-        "minor",
-        "lockFileMaintenance"
+        "minor"
       ]
     }
   ]
