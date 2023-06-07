@@ -1,5 +1,5 @@
 ---
-name: Maintain node.json
+name: Maintain node-lts.json
 
 on:
   schedule:
@@ -39,7 +39,7 @@ jobs:
           author: github-actions <41898282+github-actions[bot]@users.noreply.github.com>
           body: I ran `npm run update:node` 👨‍💻
           branch: actions/create-node-pr
-          commit-message: 'fix(node.json): 🤖 ✨'
+          commit-message: 'fix(node-lts.json): 🤖 ✨'
           labels: 🤖 bot
-          title: 'fix(node.json): update version'
+          title: 'fix(node-lts.json): update version'
           token: ${{ steps.generate-token.outputs.token }}
