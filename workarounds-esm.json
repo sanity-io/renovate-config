@@ -42,11 +42,11 @@
     },
     {
       "allowedVersions": "<=6",
-      "packageNames": ["camelcase", "del", "into-stream", "p-queue"]
+      "packageNames": ["camelcase", "del", "into-stream", "p-queue", "strip-ansi"]
     },
     {
       "allowedVersions": "<=7",
-      "packageNames": ["decompress-response", "pretty-ms", "read-pkg-up"]
+      "packageNames": ["decompress-response", "pretty-ms", "read-pkg-up", "wrap-ansi"]
     },
     { "allowedVersions": "<=8", "packageNames": ["inquirer"] },
     { "allowedVersions": "<=9", "packageNames": ["meow"] },
