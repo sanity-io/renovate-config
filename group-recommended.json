@@ -10,13 +10,13 @@
     {
       "extends": ["monorepo:sanity"],
       "groupName": "sanity packages",
-      "matchUpdateTypes": ["digest", "patch", "minor", "major"],
       "matchPackageNames": ["next-sanity", "sanity"],
       "matchPackagePatterns": [
         "^@portabletext/",
         "^@sanity/",
         "sanity-plugin-*"
       ],
+      "matchUpdateTypes": ["digest", "major", "minor", "patch"],
       "schedule": ["at any time"]
     },
     {

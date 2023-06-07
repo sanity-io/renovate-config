@@ -12,9 +12,9 @@
       "description": "Group all Sanity Studio dependencies together",
       "extends": ["monorepo:sanity"],
       "groupName": "sanity packages",
-      "matchUpdateTypes": ["digest", "patch", "minor", "major"],
       "matchPackageNames": ["hydrogen-sanity", "next-sanity"],
-      "matchPackagePrefixes": ["@portabletext", "@sanity", "sanity-"]
+      "matchPackagePrefixes": ["@portabletext", "@sanity", "sanity-"],
+      "matchUpdateTypes": ["digest", "major", "minor", "patch"]
     },
     {
       "description": "Upgrade Sanity Studio v2 dependencies to v3",
