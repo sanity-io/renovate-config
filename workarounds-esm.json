@@ -32,9 +32,9 @@
         "p-map",
         "p-props",
         "p-timeout",
+        "rimraf",
         "string-width",
-        "xdg-basedir",
-        "rimraf"
+        "xdg-basedir"
       ]
     },
     {
