@@ -121,4 +121,4 @@ If a project have a small backlog of outdated dependencies, and have a good CI i
 With this setup only major dependencies get their own PRs. And dev dependencies that aren't major are automerged.
 
 [renovatebot]: https://github.com/renovatebot/renovate
-[Renovate]: https://www.mend.io/renovate/
+[renovate]: https://www.mend.io/renovate/

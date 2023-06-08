@@ -3,70 +3,142 @@
   "description": "Workaround packages that are [Pure ESM](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c) directly, or have started using transitive dependencies that are.",
   "packageRules": [
     {
+      "allowedVersions": "<=1",
+      "matchManagers": ["npm"],
+      "packageNames": ["@sindresorhus/slugify", "node-version-alias", "tempy"]
+    },
+    {
       "allowedVersions": "<=2",
+      "matchManagers": ["npm"],
       "packageNames": [
         "arrify",
+        "env-paths",
+        "filter-obj",
+        "is-docker",
         "is-retry-allowed",
         "is-stream",
+        "move-file",
+        "node-fetch",
         "p-filter",
+        "p-reduce",
+        "test-each",
         "to-readable-stream"
       ]
     },
     {
       "allowedVersions": "<=3",
+      "matchManagers": ["npm"],
       "packageNames": [
+        "@types/rimraf",
         "clean-stack",
+        "figures",
         "file-url",
         "git-remote-origin-url",
+        "is-plain-obj",
+        "junk",
+        "p-limit",
+        "keep-func-props",
         "leven",
         "p-any",
-        "pkg-up",
-        "@types/rimraf"
+        "p-wait-for",
+        "path-key",
+        "pkg-up"
       ]
     },
     {
       "allowedVersions": "<=4",
+      "matchManagers": ["npm"],
       "packageNames": [
+        "ansi-escapes",
         "chalk",
+        "escape-string-regexp",
+        "has-ansi",
+        "indent-string",
         "log-symbols",
+        "map-obj",
         "npm-run-path",
+        "os-name",
+        "p-event",
         "p-map",
         "p-props",
         "p-timeout",
+        "path-exists",
+        "path-type",
+        "process-exists",
+        "rimraf",
+        "sort-on",
         "string-width",
-        "xdg-basedir",
-        "rimraf"
+        "xdg-basedir"
       ]
     },
     {
       "allowedVersions": "<=5",
-      "packageNames": ["boxen", "execa", "ora", "pkg-dir", "pretty-bytes"]
+      "matchManagers": ["npm"],
+      "packageNames": [
+        "ansi-styles",
+        "boxen",
+        "ansi-regex",
+        "configstore",
+        "execa",
+        "find-up",
+        "get-bin-path",
+        "get-port",
+        "ora",
+        "p-locate",
+        "pkg-dir",
+        "pretty-bytes",
+        "read-pkg"
+      ]
     },
     {
       "allowedVersions": "<=6",
+      "matchManagers": ["npm"],
       "packageNames": [
         "camelcase",
         "del",
+        "dot-prop",
         "into-stream",
+        "locate-path",
+        "log-process-errors",
         "p-queue",
         "strip-ansi"
       ]
     },
     {
       "allowedVersions": "<=7",
+      "matchManagers": ["npm"],
       "packageNames": [
         "decompress-response",
         "pretty-ms",
+        "ps-list",
         "read-pkg-up",
         "wrap-ansi"
       ]
     },
-    { "allowedVersions": "<=8", "packageNames": ["inquirer"] },
-    { "allowedVersions": "<=9", "packageNames": ["meow"] },
-    { "allowedVersions": "<=11", "packageNames": ["globby"] },
+    {
+      "allowedVersions": "<=8",
+      "matchManagers": ["npm"],
+      "packageNames": ["inquirer", "supports-color"]
+    },
+    {
+      "allowedVersions": "<=9",
+      "matchManagers": ["npm"],
+      "packageNames": ["meow"]
+    },
+    {
+      "allowedVersions": "<=10",
+      "matchManagers": ["npm"],
+      "packageNames": ["got"]
+    },
+    {
+      "allowedVersions": "<=11",
+      "matchManagers": ["npm"],
+      "packageNames": ["get-node", "globby"]
+    },
     {
       "description": "node-fetch v3 and later is ESM only, which makes zero sense as node v18 is introducing native fetch support. The times you need node-fetch is in older node versions. This preset tells renovatebot to stay on v2 unless manually updating to v3 first",
       "followTag": "cjs",
+      "matchManagers": ["npm"],
       "packageNames": ["node-fetch"]
     }
   ]
