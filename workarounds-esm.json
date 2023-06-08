@@ -5,12 +5,16 @@
     {
       "allowedVersions": "<=1",
       "matchManagers": ["npm"],
-      "packageNames": ["@sindresorhus/slugify", "node-version-alias", "tempy"]
+      "matchPackageNames": [
+        "@sindresorhus/slugify",
+        "node-version-alias",
+        "tempy"
+      ]
     },
     {
       "allowedVersions": "<=2",
       "matchManagers": ["npm"],
-      "packageNames": [
+      "matchPackageNames": [
         "arrify",
         "env-paths",
         "filter-obj",
@@ -28,7 +32,7 @@
     {
       "allowedVersions": "<=3",
       "matchManagers": ["npm"],
-      "packageNames": [
+      "matchPackageNames": [
         "@types/rimraf",
         "clean-stack",
         "figures",
@@ -48,7 +52,7 @@
     {
       "allowedVersions": "<=4",
       "matchManagers": ["npm"],
-      "packageNames": [
+      "matchPackageNames": [
         "ansi-escapes",
         "chalk",
         "escape-string-regexp",
@@ -74,7 +78,7 @@
     {
       "allowedVersions": "<=5",
       "matchManagers": ["npm"],
-      "packageNames": [
+      "matchPackageNames": [
         "ansi-regex",
         "ansi-styles",
         "boxen",
@@ -93,7 +97,7 @@
     {
       "allowedVersions": "<=6",
       "matchManagers": ["npm"],
-      "packageNames": [
+      "matchPackageNames": [
         "camelcase",
         "del",
         "dot-prop",
@@ -107,7 +111,7 @@
     {
       "allowedVersions": "<=7",
       "matchManagers": ["npm"],
-      "packageNames": [
+      "matchPackageNames": [
         "decompress-response",
         "pretty-ms",
         "ps-list",
@@ -118,28 +122,28 @@
     {
       "allowedVersions": "<=8",
       "matchManagers": ["npm"],
-      "packageNames": ["inquirer", "supports-color"]
+      "matchPackageNames": ["inquirer", "supports-color"]
     },
     {
       "allowedVersions": "<=9",
       "matchManagers": ["npm"],
-      "packageNames": ["meow"]
+      "matchPackageNames": ["meow"]
     },
     {
       "allowedVersions": "<=10",
       "matchManagers": ["npm"],
-      "packageNames": ["got"]
+      "matchPackageNames": ["got"]
     },
     {
       "allowedVersions": "<=11",
       "matchManagers": ["npm"],
-      "packageNames": ["get-node", "globby"]
+      "matchPackageNames": ["get-node", "globby"]
     },
     {
       "description": "node-fetch v3 and later is ESM only, which makes zero sense as node v18 is introducing native fetch support. The times you need node-fetch is in older node versions. This preset tells renovatebot to stay on v2 unless manually updating to v3 first",
       "followTag": "cjs",
       "matchManagers": ["npm"],
-      "packageNames": ["node-fetch"]
+      "matchPackageNames": ["node-fetch"]
     }
   ]
 }
