@@ -36,10 +36,10 @@
         "git-remote-origin-url",
         "is-plain-obj",
         "junk",
-        "p-limit",
         "keep-func-props",
         "leven",
         "p-any",
+        "p-limit",
         "p-wait-for",
         "path-key",
         "pkg-up"
@@ -75,9 +75,9 @@
       "allowedVersions": "<=5",
       "matchManagers": ["npm"],
       "packageNames": [
+        "ansi-regex",
         "ansi-styles",
         "boxen",
-        "ansi-regex",
         "configstore",
         "execa",
         "find-up",
