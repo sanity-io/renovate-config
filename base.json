@@ -6,4 +6,5 @@
     "github>sanity-io/renovate-config:branding"
   ],
   "configMigration": true,
+  "separateMultipleMajor": true
 }
