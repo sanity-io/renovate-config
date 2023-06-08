@@ -20,7 +20,8 @@
         "git-remote-origin-url",
         "leven",
         "p-any",
-        "pkg-up"
+        "pkg-up",
+        "@types/rimraf"
       ]
     },
     {
