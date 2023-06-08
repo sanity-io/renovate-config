@@ -42,7 +42,7 @@ jobs:
         if: ${{ steps.generate-token.outputs.token != '' }}
         with:
           author: github-actions <41898282+github-actions[bot]@users.noreply.github.com>
-          body: I ran `npm run format` 👨‍💻
+          body: I ran `npm run format` 🧑‍💻
           branch: actions/prettier-if-needed
           commit-message: 'chore(prettier): 🤖 ✨'
           labels: 🤖 bot

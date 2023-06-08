@@ -37,7 +37,7 @@ jobs:
         if: ${{ steps.generate-token.outputs.token != '' }}
         with:
           author: github-actions <41898282+github-actions[bot]@users.noreply.github.com>
-          body: I ran `npm run update:node` 👨‍💻
+          body: I ran `npm run update:node` 🧑‍💻
           branch: actions/create-node-pr
           commit-message: 'fix(node-lts.json): 🤖 ✨'
           labels: 🤖 bot
