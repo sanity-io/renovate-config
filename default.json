@@ -14,7 +14,6 @@
     "github>sanity-io/renovate-config:dedupe"
   ],
   "onboardingConfigFileName": ".github/renovate.json",
-  "configMigration": true,
   "migratePresets": {
     "github>sanity-io/renovate-presets//ecosystem/auto": "github>sanity-io/renovate-config",
     "github>sanity-io/renovate-presets//ecosystem/automerge": "github>sanity-io/renovate-config:automerge",
