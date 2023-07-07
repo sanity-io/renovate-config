@@ -21,6 +21,7 @@
         "is-docker",
         "is-retry-allowed",
         "is-stream",
+        "mkdirp",
         "move-file",
         "node-fetch",
         "p-filter",
