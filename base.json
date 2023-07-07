@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     ":semanticCommits",
-    "config:base",
+    "config:recommended",
     "github>sanity-io/renovate-config:branding"
   ],
   "configMigration": true,
