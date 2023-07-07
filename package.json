@@ -1,5 +1,6 @@
 {
   "type": "module",
+  "name": "renovate-config",
   "scripts": {
     "format": "prettier --ignore-path .gitignore --cache --write .",
     "test": "zx scripts/validate-config.js",
