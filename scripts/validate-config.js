@@ -19,7 +19,7 @@ for (const file of files) {
         `Validation failed for ${file}: ${p.stderr || p.stdout || p.message}`,
         {
           cause: p.errors?.[0] || p,
-        }
+        },
       )
     }
   })
