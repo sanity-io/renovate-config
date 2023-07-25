@@ -5,12 +5,17 @@
     {
       "matchDepTypes": [
         "dependencies",
-        "devDependencies",
-        "optionalDependencies",
         "overrides",
         "resolutions"
       ],
       "rangeStrategy": "update-lockfile"
+    },
+    {
+      "matchDepTypes": [
+        "devDependencies",
+        "optionalDependencies"
+      ],
+      "rangeStrategy": "bump"
     },
     {
       "matchDepTypes": ["engines", "peerDependencies"],
