@@ -4,7 +4,12 @@
   "packageRules": [
     {
       "matchManagers": ["npm"],
-      "semanticCommitScope": "isRange={{isRange}} isLockfileUpdate={{isLockfileUpdate}} isGroup={{isGroup}} isSingleVersion={{isSingleVersion}} isReplacement={{isReplacement}} packageFile={{packageFile}} packageName={{packageName}}"
+      "semanticCommitScope": "isRange={{isRange}} isLockfileUpdate={{isLockfileUpdate}} isGroup={{isGroup}} isSingleVersion={{isSingleVersion}}"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["dependencies", "peerDependencies", "optionalDependencies", "engines"],
+      "semanticCommitType": "fixfix"
     }
   ]
 }
