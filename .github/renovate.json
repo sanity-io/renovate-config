@@ -5,7 +5,7 @@
     { "matchManagers": ["npm"], "semanticCommitType": "chore" },
     {
       "group": {
-        "semanticCommitType": "{{#if isLockfileUpdate}}{{#unless (or isRange isSingleVersion)}}fix{{else}}chore{{/unless}}{{else}}fix{{/if}}"
+        "semanticCommitType": "{{#if isLockfileUpdate}}{{#if (or isRange isSingleVersion)}}fix{{else}}chore{{/if}}{{else}}fix{{/if}}"
       },
       "matchDepTypes": [
         "dependencies",
