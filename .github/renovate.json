@@ -5,7 +5,7 @@
     {
       "matchDepTypes": ["dependencies", "overrides", "resolutions"],
       "rangeStrategy": "update-lockfile",
-      "semanticCommitType": "{{#if isBump}}isBump{{/if}}{{#if isRange}}isRange{{/if}}{{#if isLockfileUpdate}}isLockfileUpdate{{/if}}{{#if updateType}}updateType{{/if}}"
+      "semanticCommitType": "isBump{{isBump}} isRange{{isRange}} isLockfileUpdate{{isLockfileUpdate}} updateType{{updateType}}"
     }
   ]
 }
