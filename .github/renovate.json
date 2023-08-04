@@ -2,10 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>sanity-io/renovate-config"],
   "packageRules": [
-    {
-      "matchManagers": ["npm"],
-      "semanticCommitType": "chore"
-    },
+    { "matchManagers": ["npm"], "semanticCommitType": "chore" },
     {
       "group": {
         "semanticCommitType": "{{#if isLockfileUpdate}}{{#unless isRange}}fix{{else}}chore{{/unless}}{{else}}fix{{/if}}"
