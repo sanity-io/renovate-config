@@ -4,11 +4,11 @@
   "packageRules": [
     {
       "group": {
-        "semanticCommitScope": "group isRange={{isRange}} isBump={{isBump}} isLockfileUpdate={{isLockfileUpdate}} isGroup={{isGroup}} isSingleVersion={{isSingleVersion}}",
+        "semanticCommitScope": "group isRange={{isRange}} isLockfileUpdate={{isLockfileUpdate}} isGroup={{isGroup}} isSingleVersion={{isSingleVersion}}",
         "semanticCommitType": "groupchore"
       },
       "matchManagers": ["npm"],
-      "semanticCommitScope": "isRange={{isRange}} isBump={{isBump}} isLockfileUpdate={{isLockfileUpdate}} isGroup={{isGroup}} isSingleVersion={{isSingleVersion}}",
+      "semanticCommitScope": "isRange={{isRange}} isLockfileUpdate={{isLockfileUpdate}} isGroup={{isGroup}} isSingleVersion={{isSingleVersion}}",
       "semanticCommitType": "fallbackchore"
     },
     {
