@@ -19,9 +19,9 @@
         "peerDependencies"
       ],
       "matchManagers": ["npm"],
-      "semanticCommitType": "{{#if (and isSingleVersion isLockfileUpdate)}}chorechore{{else}}fixfix{{/if}}",
+      "semanticCommitType": "{{#if isLockfileUpdate}}chorechore{{else}}fixfix{{/if}}",
       "group": {
-        "semanticCommitType": "{{#if (and isSingleVersion isLockfileUpdate)}}groupchorechore{{else}}groupfixfix{{/if}}"
+        "semanticCommitType": "{{#if isRange}}groupfixfix{{else}}{{#if isLockfileUpdate}}groupchorechorechore{{else}}groupfixfixfix{{/if}}{{/if}}"
       }
     }
   ],
