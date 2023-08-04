@@ -1,16 +1,21 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>sanity-io/renovate-config"],
-  "ignorePresets": ["github>sanity-io/renovate-config:group-non-major"],
   "packageRules": [
     {
       "matchManagers": ["npm"],
       "semanticCommitScope": "isRange={{isRange}} isLockfileUpdate={{isLockfileUpdate}} isGroup={{isGroup}} isSingleVersion={{isSingleVersion}}"
     },
     {
+      "matchDepTypes": [
+        "dependencies",
+        "engines",
+        "optionalDependencies",
+        "peerDependencies"
+      ],
       "matchManagers": ["npm"],
-      "matchDepTypes": ["dependencies", "peerDependencies", "optionalDependencies", "engines"],
       "semanticCommitType": "fixfix"
     }
-  ]
+  ],
+  "ignorePresets": ["github>sanity-io/renovate-config:group-non-major"]
 }

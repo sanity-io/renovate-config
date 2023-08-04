@@ -6,8 +6,18 @@
       "description": "Groups every update type except major",
       "excludeDepNames": ["npm", "pnpm", "yarn"],
       "groupName": "non-major",
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "pinDigest", "lockFileMaintenance", "lockfileUpdate", "rollback", "bump", "replacement"]
-      
+      "matchUpdateTypes": [
+        "bump",
+        "digest",
+        "lockFileMaintenance",
+        "lockfileUpdate",
+        "minor",
+        "patch",
+        "pin",
+        "pinDigest",
+        "replacement",
+        "rollback"
+      ]
     }
   ]
 }
