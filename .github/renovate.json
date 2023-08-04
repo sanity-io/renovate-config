@@ -8,6 +8,9 @@
       "semanticCommitType": "chore"
     },
     {
+      "group": {
+        "semanticCommitType": "{{#if isRange}}groupfix{{else}}{{#if isLockfileUpdate}}groupchore{{else}}fix{{/if}}{{/if}}"
+      },
       "matchDepTypes": [
         "dependencies",
         "engines",
@@ -15,10 +18,7 @@
         "peerDependencies"
       ],
       "matchManagers": ["npm"],
-      "semanticCommitType": "{{#if isLockfileUpdate}}chorechore{{else}}fixfix{{/if}}",
-      "group": {
-        "semanticCommitType": "{{#if isRange}}groupfix{{else}}{{#if isLockfileUpdate}}groupchore{{else}}fix{{/if}}{{/if}}"
-      }
+      "semanticCommitType": "{{#if isLockfileUpdate}}chorechore{{else}}fixfix{{/if}}"
     }
   ],
   "ignorePresets": [":semanticPrefixFixDepsChoreOthers"]
