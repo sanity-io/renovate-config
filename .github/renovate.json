@@ -16,6 +16,14 @@
       "excludeDepNames": ["npm", "pnpm", "yarn"],
       "groupName": "non-major",
       "matchUpdateTypes": ["minor", "patch", "pin", "digest", "pinDigest", "lockFileMaintenance", "lockfileUpdate", "rollback", "bump", "replacement"]
+    },
+    {
+      "matchDepTypes": ["dependencies", "peerDependencies", "optionalDependencies"],
+      "semanticCommitType": "fix"
+    },
+    {
+      "excludeDepTypes": ["dependencies", "peerDependencies", "optionalDependencies"],
+      "semanticCommitType": "chore"
     }
   ]
 }
