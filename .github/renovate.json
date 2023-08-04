@@ -4,7 +4,7 @@
   "packageRules": [
     {
       "matchManagers": ["npm"],
-      "semanticCommitScope": "isRange={{isRange}} isLockfileUpdate={{isLockfileUpdate}} isGroup={{isGroup}} isSingleVersion={{isSingleVersion}}",
+      "semanticCommitScope": "isRange={{isRange}} isBump={{isBump}} isLockfileUpdate={{isLockfileUpdate}} isGroup={{isGroup}} isSingleVersion={{isSingleVersion}}",
       "semanticCommitType": "chore"
     },
     {
