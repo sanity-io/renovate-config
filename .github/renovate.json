@@ -4,11 +4,6 @@
   "ignorePresets": ["github>sanity-io/renovate-config:group-non-major"],
   "packageRules": [
     {
-      "matchManagers": ["npm"],
-      "matchDepTypes": ["dependencies", "overrides", "resolutions"],
-      "rangeStrategy": "update-lockfile"
-    },
-    {
       "description": "Groups every update type except major",
       "excludeDepNames": ["npm", "pnpm", "yarn"],
       "groupName": "non-major",
