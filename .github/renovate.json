@@ -4,12 +4,11 @@
   "packageRules": [
     {
       "matchManagers": ["npm"],
-      "semanticCommitScope": "isRange={{isRange}} isLockfileUpdate={{isLockfileUpdate}} isSingleVersion={{isSingleVersion}}",
       "semanticCommitType": "chore"
     },
     {
       "group": {
-        "semanticCommitType": "{{#if isLockfileUpdate}}{{#unless isRange}}groupfix2{{else}}groupchore{{/unless}}{{else}}groupfix1{{/if}}"
+        "semanticCommitType": "{{#if isLockfileUpdate}}{{#unless isRange}}fix{{else}}chore{{/unless}}{{else}}fix{{/if}}"
       },
       "matchDepTypes": [
         "dependencies",
@@ -18,7 +17,7 @@
         "peerDependencies"
       ],
       "matchManagers": ["npm"],
-      "semanticCommitType": "{{#if isLockfileUpdate}}chorechore{{else}}fixfix{{/if}}"
+      "semanticCommitType": "{{#if isLockfileUpdate}}chore{{else}}fix{{/if}}"
     }
   ],
   "ignorePresets": [":semanticPrefixFixDepsChoreOthers"]
