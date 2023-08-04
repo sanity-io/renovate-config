@@ -2,7 +2,7 @@
   "dependencies": {
     "scroll-into-view-if-needed": "^2.2.30",
     "compute-scroll-into-view": "^2.0.3",
-    "type-fest": "4.1.0"
+    "type-fest": "4.0.0"
   },
   "devDependencies": {
     "react": "^17.0.2",
