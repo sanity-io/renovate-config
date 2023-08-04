@@ -10,6 +10,12 @@
       "group": {
         "semanticCommitType": "isBump={{isBump}} isRange={{isRange}} isLockfileUpdate={{isLockfileUpdate}} current={{currentVersion}}=>{{currentValue}} new={{newVersion}}=>{{newValue}} indentation={{indentation}}"
       }
+    },
+    {
+      "description": "Groups every update type except major",
+      "excludeDepNames": ["npm", "pnpm", "yarn"],
+      "groupName": "non-major",
+      "excludeUpdateTypes": ["major"]
     }
   ]
 }
