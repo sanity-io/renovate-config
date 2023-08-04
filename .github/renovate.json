@@ -9,7 +9,12 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchDepTypes": ["dependencies", "peerDependencies", "optionalDependencies", "engines"],
+      "matchDepTypes": [
+        "dependencies",
+        "peerDependencies",
+        "optionalDependencies",
+        "engines"
+      ],
       "semanticCommitType": "fixfix"
     }
   ]

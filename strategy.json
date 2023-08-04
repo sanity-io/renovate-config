@@ -4,7 +4,12 @@
   "packageRules": [
     {
       "matchManagers": ["npm"],
-      "matchDepTypes": ["dependencies", "optionalDependencies", "overrides", "resolutions"],
+      "matchDepTypes": [
+        "dependencies",
+        "optionalDependencies",
+        "overrides",
+        "resolutions"
+      ],
       "rangeStrategy": "update-lockfile"
     },
     {
