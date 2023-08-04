@@ -3,6 +3,7 @@
   "description": "Use curated presets maintained by [Sanity](https://www.sanity.io/?utm_source=github&utm_medium=referral&utm_campaign=ecosystem-renovate-preset). See [docs](https://github.com/sanity-io/renovate-config#readme) for advanced usage.",
   "extends": [
     "github>sanity-io/renovate-config:base",
+    "github>sanity-io/renovate-config:semantic-commit-type",
     "github>sanity-io/renovate-config:security",
     "github>sanity-io/renovate-config:strategy",
     "github>sanity-io/renovate-config:labels",
