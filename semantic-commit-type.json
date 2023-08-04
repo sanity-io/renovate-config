@@ -17,7 +17,5 @@
       "semanticCommitType": "{{#if isLockfileUpdate}}chore{{else}}fix{{/if}}"
     }
   ],
-  "ignorePresets": [
-    ":semanticPrefixFixDepsChoreOthers"
-  ]
+  "ignorePresets": [":semanticPrefixFixDepsChoreOthers"]
 }
