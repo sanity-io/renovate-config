@@ -1,21 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>sanity-io/renovate-config"],
-  "packageRules": [
-    { "matchManagers": ["npm"], "semanticCommitType": "chore" },
-    {
-      "group": {
-        "semanticCommitType": "{{#if isLockfileUpdate}}{{#if (or isRange isSingleVersion)}}fix{{else}}chore{{/if}}{{else}}fix{{/if}}"
-      },
-      "matchDepTypes": [
-        "dependencies",
-        "engines",
-        "optionalDependencies",
-        "peerDependencies"
-      ],
-      "matchManagers": ["npm"],
-      "semanticCommitType": "{{#if isLockfileUpdate}}chore{{else}}fix{{/if}}"
-    }
-  ],
-  "ignorePresets": [":semanticPrefixFixDepsChoreOthers"]
+  "extends": ["github>sanity-io/renovate-config", "github>sanity-io/renovate-config:semantic-commit-type"],
+  "ignorePresets": [
+    "github>sanity-io/renovate-config:group-non-major"
+  ]
 }
