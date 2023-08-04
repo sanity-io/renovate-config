@@ -22,7 +22,6 @@
     }
   ],
   "ignorePresets": [
-    ":semanticPrefixFixDepsChoreOthers",
-    "github>sanity-io/renovate-config:group-non-major"
+    ":semanticPrefixFixDepsChoreOthers"
   ]
 }
