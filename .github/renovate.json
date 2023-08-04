@@ -3,11 +3,11 @@
   "extends": ["github>sanity-io/renovate-config"],
   "packageRules": [
     {
-      "matchManagers": ["npm"],
-      "semanticCommitScope": "isRange={{isRange}} isBump={{isBump}} isLockfileUpdate={{isLockfileUpdate}} isGroup={{isGroup}} isSingleVersion={{isSingleVersion}}",
       "group": {
         "semanticCommitScope": "group isRange={{isRange}} isBump={{isBump}} isLockfileUpdate={{isLockfileUpdate}} isGroup={{isGroup}} isSingleVersion={{isSingleVersion}}"
       },
+      "matchManagers": ["npm"],
+      "semanticCommitScope": "isRange={{isRange}} isBump={{isBump}} isLockfileUpdate={{isLockfileUpdate}} isGroup={{isGroup}} isSingleVersion={{isSingleVersion}}",
       "semanticCommitType": "fallbackchore"
     },
     {
