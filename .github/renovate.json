@@ -1,11 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>sanity-io/renovate-config"],
+  "ignorePresets": ["github>sanity-io/renovate-config:group-non-major"],
   "packageRules": [
     {
       "matchDepTypes": ["dependencies", "overrides", "resolutions"],
       "rangeStrategy": "update-lockfile",
-      "semanticCommitType": "isBump={{isBump}} isRange={{isRange}} isLockfileUpdate={{isLockfileUpdate}} current={{currentVersion}}=>{{currentValue}} new={{newVersion}}=>{{newValue}} indentation={{indentation}}"
+      "semanticCommitType": "isBump={{isBump}} isRange={{isRange}} isLockfileUpdate={{isLockfileUpdate}}",
+      "group": {
+        "semanticCommitType": "isBump={{isBump}} isRange={{isRange}} isLockfileUpdate={{isLockfileUpdate}} current={{currentVersion}}=>{{currentValue}} new={{newVersion}}=>{{newValue}} indentation={{indentation}}"
+      }
     }
   ]
 }
