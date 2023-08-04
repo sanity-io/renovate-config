@@ -19,12 +19,10 @@
     "renovate": "^36.0.0",
     "sort-object-keys": "^1.1.2",
     "zx": "^7.2.2",
-    "compute-scroll-into-view": "^3.0.0",
-    "type-fest": "4.0.0"
+    "type-fest": "^4.0.0"
   },
   "devDependencies": {
     "prettier": "^3.0.1",
-    "prettier-plugin-packagejson": "^2.4.5",
-    "react": "^18.2.0"
+    "prettier-plugin-packagejson": "^2.4.5"
   }
 }
