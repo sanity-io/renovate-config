@@ -19,7 +19,5 @@
       "semanticCommitScope": "{{#if isLockfileUpdate}}lockfile{{else}}deps{{/if}}"
     }
   ],
-  "ignorePresets": [
-    ":semanticPrefixFixDepsChoreOthers"
-  ]
+  "ignorePresets": [":semanticPrefixFixDepsChoreOthers"]
 }
