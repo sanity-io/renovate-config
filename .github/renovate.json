@@ -5,7 +5,7 @@
     {
       "matchDepTypes": ["dependencies", "overrides", "resolutions"],
       "rangeStrategy": "update-lockfile",
-      "semanticCommitType": "{{{depNameSanitized}}}-{{{newMajor}}}{{#if isPatch}}.{{{newMinor}}}{{/if}}.x{{#if isLockfileUpdate}}-lockfile{{/if}}"
+      "semanticCommitType": "{{#if isLockfileUpdate}}chore{{else}}fix{{/if}}"
     }
   ]
 }
