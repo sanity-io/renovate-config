@@ -6,7 +6,7 @@
     {
       "group": {
         "semanticCommitType": "{{#if isLockfileUpdate}}{{#if (or isRange isSingleVersion)}}fix{{else}}chore{{/if}}{{else}}fix{{/if}}",
-        "semanticCommitScope": "deps"
+        "semanticCommitScope": "{{#if isRange}}range{{#if isSingleVersion}}single-version{{#if isLockfileUpdate}}lockfile{{else}}deps{{/if}}{{/if}}{{/if}}"
       },
       "matchDepTypes": [
         "dependencies",
