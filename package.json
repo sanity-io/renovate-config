@@ -19,7 +19,7 @@
     "renovate": "^36.0.0",
     "sort-object-keys": "^1.1.2",
     "zx": "^7.2.2",
-    "compute-scroll-into-view": "^2.0.3",
+    "compute-scroll-into-view": "^3.0.0",
     "type-fest": "4.1.0"
   },
   "devDependencies": {
