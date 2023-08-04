@@ -7,16 +7,16 @@
       "excludeDepNames": ["npm", "pnpm", "yarn"],
       "groupName": "non-major",
       "matchUpdateTypes": [
+        "bump",
+        "digest",
+        "lockFileMaintenance",
+        "lockfileUpdate",
         "minor",
         "patch",
         "pin",
-        "digest",
         "pinDigest",
-        "lockFileMaintenance",
-        "lockfileUpdate",
-        "rollback",
-        "bump",
-        "replacement"
+        "replacement",
+        "rollback"
       ]
     }
   ]
