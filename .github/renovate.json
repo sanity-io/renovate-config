@@ -4,12 +4,9 @@
   "ignorePresets": ["github>sanity-io/renovate-config:group-non-major"],
   "packageRules": [
     {
+      "matchManagers": ["npm"],
       "matchDepTypes": ["dependencies", "overrides", "resolutions"],
-      "rangeStrategy": "update-lockfile",
-      "semanticCommitType": "isBump={{isBump}} isRange={{isRange}} isLockfileUpdate={{isLockfileUpdate}}",
-      "group": {
-        "semanticCommitType": "isBump={{isBump}} isRange={{isRange}} isLockfileUpdate={{isLockfileUpdate}} current={{currentVersion}}=>{{currentValue}} new={{newVersion}}=>{{newValue}} indentation={{indentation}}"
-      }
+      "rangeStrategy": "update-lockfile"
     },
     {
       "description": "Groups every update type except major",
@@ -18,12 +15,9 @@
       "matchUpdateTypes": ["minor", "patch", "pin", "digest", "pinDigest", "lockFileMaintenance", "lockfileUpdate", "rollback", "bump", "replacement"]
     },
     {
-      "matchDepTypes": ["dependencies", "peerDependencies", "optionalDependencies"],
-      "semanticCommitType": "fix"
-    },
-    {
-      "excludeDepTypes": ["dependencies", "peerDependencies", "optionalDependencies"],
-      "semanticCommitType": "chore"
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["dependencies", "peerDependencies", "optionalDependencies", "engines"],
+      "semanticCommitType": "isBump={{isBump}} isRange={{isRange}} isLockfileUpdate={{isLockfileUpdate}} isGroup={{isGroup}} isSingleUpdate={{isSingleUpdate}}",
     }
   ]
 }
