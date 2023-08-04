@@ -5,9 +5,7 @@
   "packageRules": [
     {
       "matchManagers": ["npm"],
-      "matchDepTypes": ["dependencies", "peerDependencies", "optionalDependencies", "engines"],
-      "semanticCommitType": "isBump={{isBump}} isRange={{isRange}} isLockfileUpdate={{isLockfileUpdate}} isGroup={{isGroup}} isSingleVersion={{isSingleVersion}} isReplacement={{isReplacement}} packageFile={{packageFile}} packageName={{packageName}}",
-      "commitBody": "{{{stringToPrettyJSON versions}}} {{{stringToPrettyJSON references}}}"
+      "semanticCommitScope": "isBump={{isBump}} isRange={{isRange}} isLockfileUpdate={{isLockfileUpdate}} isGroup={{isGroup}} isSingleVersion={{isSingleVersion}} isReplacement={{isReplacement}} packageFile={{packageFile}} packageName={{packageName}}"
     }
   ]
 }
