@@ -5,8 +5,8 @@
     { "matchManagers": ["npm"], "semanticCommitType": "chore" },
     {
       "group": {
-        "semanticCommitType": "{{#if isLockfileUpdate}}{{#if (and isRange isSingleVersion)}}fix{{else}}chore{{/if}}{{else}}fix{{/if}}",
-        "semanticCommitScope": "{{#if isLockfileUpdate}}{{#if (and isRange isSingleVersion)}}deps{{else}}lockfile{{/if}}{{else}}deps{{/if}}"
+        "semanticCommitScope": "{{#if isLockfileUpdate}}{{#if (and isRange isSingleVersion)}}deps{{else}}lockfile{{/if}}{{else}}deps{{/if}}",
+        "semanticCommitType": "{{#if isLockfileUpdate}}{{#if (and isRange isSingleVersion)}}fix{{else}}chore{{/if}}{{else}}fix{{/if}}"
       },
       "matchDepTypes": [
         "dependencies",
@@ -15,8 +15,8 @@
         "peerDependencies"
       ],
       "matchManagers": ["npm"],
-      "semanticCommitType": "{{#if isLockfileUpdate}}chore{{else}}fix{{/if}}",
-      "semanticCommitScope": "{{#if isLockfileUpdate}}lockfile{{else}}deps{{/if}}"
+      "semanticCommitScope": "{{#if isLockfileUpdate}}lockfile{{else}}deps{{/if}}",
+      "semanticCommitType": "{{#if isLockfileUpdate}}chore{{else}}fix{{/if}}"
     }
   ],
   "ignorePresets": [":semanticPrefixFixDepsChoreOthers"]
