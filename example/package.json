@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "scroll-into-view-if-needed": "^1.0.0"
+    "scroll-into-view-if-needed": "^1.0.0",
+    "react": "^17.0.0"
   }
 }
