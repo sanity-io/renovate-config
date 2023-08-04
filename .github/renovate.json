@@ -1,14 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>sanity-io/renovate-config"],
-  "ignorePresets": ["github>sanity-io/renovate-config:group-non-major"],
+  
   "packageRules": [
-    {
-      "description": "Groups every update type except major",
-      "excludeDepNames": ["npm", "pnpm", "yarn"],
-      "groupName": "non-major",
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "pinDigest", "lockFileMaintenance", "lockfileUpdate", "rollback", "bump", "replacement"]
-    },
     {
       "matchManagers": ["npm"],
       "matchDepTypes": ["dependencies", "peerDependencies", "optionalDependencies", "engines"],
