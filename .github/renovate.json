@@ -15,7 +15,7 @@
         "optionalDependencies",
         "engines"
       ],
-      "semanticCommitType": "fixfix"
+      "semanticCommitType": "{{#if (and isSingleVersion isLockfileUpdate)}}chorechore{{else}}fixfix{{/if}}"
     }
   ]
 }
