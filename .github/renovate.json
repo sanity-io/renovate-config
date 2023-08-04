@@ -9,7 +9,7 @@
     },
     {
       "group": {
-        "semanticCommitType": "{{#if isRange}}groupfix{{else}}{{#if isLockfileUpdate}}groupchore{{else}}fix{{/if}}{{/if}}"
+        "semanticCommitType": "{{#if isLockfileUpdate}}{{#unless isRange}}groupfix2{{else}}groupchore{{/unless}}{{else}}groupfix1{{/if}}"
       },
       "matchDepTypes": [
         "dependencies",
