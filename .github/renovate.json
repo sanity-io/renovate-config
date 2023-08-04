@@ -5,6 +5,9 @@
     {
       "matchManagers": ["npm"],
       "semanticCommitScope": "isRange={{isRange}} isBump={{isBump}} isLockfileUpdate={{isLockfileUpdate}} isGroup={{isGroup}} isSingleVersion={{isSingleVersion}}",
+      "group": {
+        "semanticCommitScope": "group isRange={{isRange}} isBump={{isBump}} isLockfileUpdate={{isLockfileUpdate}} isGroup={{isGroup}} isSingleVersion={{isSingleVersion}}"
+      },
       "semanticCommitType": "fallbackchore"
     },
     {
