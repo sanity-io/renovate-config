@@ -3,13 +3,9 @@
   "extends": ["github>sanity-io/renovate-config"],
   "packageRules": [
     {
-      "group": {
-        "semanticCommitScope": "group isRange={{isRange}} isLockfileUpdate={{isLockfileUpdate}} isGroup={{isGroup}}",
-        "semanticCommitType": "groupchore"
-      },
       "matchManagers": ["npm"],
       "semanticCommitScope": "isRange={{isRange}} isLockfileUpdate={{isLockfileUpdate}} isGroup={{isGroup}}",
-      "semanticCommitType": "fallbackchore"
+      "semanticCommitType": "chore"
     },
     {
       "matchDepTypes": [
@@ -21,7 +17,7 @@
       "matchManagers": ["npm"],
       "semanticCommitType": "{{#if isLockfileUpdate}}chorechore{{else}}fixfix{{/if}}",
       "group": {
-        "semanticCommitType": "{{#if isRange}}groupfixfix{{else}}{{#if isLockfileUpdate}}groupchorechorechore{{else}}fix{{/if}}{{/if}}"
+        "semanticCommitType": "{{#if isRange}}groupfix{{else}}{{#if isLockfileUpdate}}groupchore{{else}}fix{{/if}}{{/if}}"
       }
     }
   ],
