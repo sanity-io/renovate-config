@@ -4,6 +4,7 @@
   "packageRules": [
     {
       "matchManagers": ["npm"],
+      "semanticCommitType": "chore",
       "semanticCommitScope": "isRange={{isRange}} isLockfileUpdate={{isLockfileUpdate}} isGroup={{isGroup}} isSingleVersion={{isSingleVersion}}"
     },
     {
@@ -17,5 +18,5 @@
       "semanticCommitType": "{{#if (and isSingleVersion isLockfileUpdate)}}chorechore{{else}}fixfix{{/if}}"
     }
   ],
-  "ignorePresets": ["github>sanity-io/renovate-config:group-non-major"]
+  "ignorePresets": ["github>sanity-io/renovate-config:group-non-major", ":semanticPrefixFixDepsChoreOthers"]
 }
