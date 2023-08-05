@@ -6,8 +6,8 @@
       "excludePackagePrefixes": ["actions/", "github/"],
       "matchDepTypes": ["action"],
       "pinDigests": true,
-       "schedule": [],
-       "groupName": null,
+      "schedule": [],
+      "groupName": null,
       "dependencyDashboardApproval": true
     }
   ]
