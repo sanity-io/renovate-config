@@ -3,12 +3,12 @@
   "description": "Pin `github-action` digests. As per GitHubs [security best practice](https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#using-third-party-actions).",
   "packageRules": [
     {
+      "dependencyDashboardApproval": true,
       "excludePackagePrefixes": ["actions/", "github/"],
+      "groupName": null,
       "matchDepTypes": ["action"],
       "pinDigests": true,
-      "schedule": [],
-      "groupName": null,
-      "dependencyDashboardApproval": true
+      "schedule": []
     }
   ]
 }
