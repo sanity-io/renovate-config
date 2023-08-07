@@ -7,39 +7,11 @@
       "matchPackageNames": ["three"],
       "matchPackagePatterns": ["^@react-three/"]
     },
-    {
-      "groupName": "typescript packages",
-      "matchPackageNames": ["type-fest", "typescript"],
-      "matchPackagePatterns": ["^@types/"]
-    },
     { "groupName": "reach packages", "matchPackagePatterns": ["^@reach/"] },
-    {
-      "extends": ["monorepo:react"],
-      "groupName": "react packages",
-      "matchPackageNames": ["prop-types"]
-    },
     {
       "groupName": "grunt packages",
       "matchPackageNames": ["grunt", "load-grunt-tasks"],
       "matchPackagePatterns": ["^grunt-"]
-    },
-    {
-      "groupName": "webpack packages",
-      "matchPackageNames": [
-        "babel-loader",
-        "css-loader",
-        "file-loader",
-        "mini-css-extract-plugin",
-        "mustache-loader",
-        "postcss-loader",
-        "raw-loader",
-        "sass-loader",
-        "source-map-loader",
-        "style-loader",
-        "url-loader",
-        "vue-loader"
-      ],
-      "matchPackagePatterns": ["-webpack-plugin$", "^webpack"]
     },
     {
       "groupName": "rollup packages",
@@ -71,20 +43,6 @@
         "@types/ioredis-mock",
         "ioredis",
         "ioredis-mock"
-      ]
-    },
-    { "extends": ["monorepo:babel", "monorepo:babel6"], "groupName": "babel" },
-    {
-      "extends": ["packages:linters"],
-      "groupName": "linters",
-      "matchPackageNames": [
-        "@nuxtjs/eslint-config",
-        "babel-eslint",
-        "husky",
-        "lint-staged",
-        "prettier",
-        "prettier-eslint-cli",
-        "prettier-package-json"
       ]
     }
   ]
