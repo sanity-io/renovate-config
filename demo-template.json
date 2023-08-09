@@ -6,6 +6,5 @@
     ":dependencyDashboardApproval",
     "schedule:quarterly"
   ],
-  "ignorePresets": ["schedule:quarterly"
-  ]
+  "ignorePresets": ["schedule:quarterly"]
 }
