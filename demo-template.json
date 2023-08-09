@@ -1,0 +1,11 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "These presets are adapted to Sanity demo template maintenance, the aim is to reduce noise further and to increase stability.",
+  "extends": [
+    "github>sanity-io/renovate-config:starter-template",
+    ":dependencyDashboardApproval",
+    "schedule:quarterly"
+  ],
+  "ignorePresets": ["schedule:quarterly"
+  ]
+}

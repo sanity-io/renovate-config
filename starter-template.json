@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "These presets are to aid Sanity Template maintenance, the aim is to reduce noise further and to increase stability.",
+  "description": "These presets are adapted to Sanity starter template maintenance, the aim is to reduce noise further and to increase stability.",
   "extends": [
     "github>sanity-io/renovate-config",
     "github>sanity-io/renovate-config:studio-v3",
