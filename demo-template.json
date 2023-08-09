@@ -6,5 +6,5 @@
     ":dependencyDashboardApproval",
     "schedule:quarterly"
   ],
-  "ignorePresets": ["schedule:quarterly"]
+  "ignorePresets": ["schedule:quarterly", "github>sanity-io/renovate-config:group-non-major"]
 }
