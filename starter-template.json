@@ -12,10 +12,12 @@
     "github>sanity-io/renovate-config:semantic-commit-type",
     "github>sanity-io/renovate-config:strategy"
   ],
-  "packageRules": [{
-    "matchDepTypes": ["engines"],
-    "matchManagers": ["npm"],
-    "rangeStrategy": "widen"
-  }],
+  "packageRules": [
+    {
+      "matchDepTypes": ["engines"],
+      "matchManagers": ["npm"],
+      "rangeStrategy": "widen"
+    }
+  ],
   "rangeStrategy": "pin"
 }
