@@ -1,11 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Always widen `peerDependencies` and `engines`, while other types like `dependencies`, `devDependencies` are `update-lockfile`.",
-  "lockFileMaintenance": {
-    "dependencyDashboardApproval": true,
-    "enabled": true,
-    "schedule": ["every 12 months on the first day of the month"]
-  },
   "packageRules": [
     {
       "matchDepTypes": [
