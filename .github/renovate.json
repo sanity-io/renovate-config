@@ -4,6 +4,7 @@
   "rebaseWhen": "behind-base-branch",
   "packageRules": [
     {
+      "matchManagers": ["npm"],
       "lockfileMaintenance": {
         "enabled": true,
         "dependencyDashboardApproval": true
