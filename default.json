@@ -7,6 +7,7 @@
     "github>sanity-io/renovate-config:security",
     "github>sanity-io/renovate-config:strategy",
     "github>sanity-io/renovate-config:labels",
+    "github>sanity-io/renovate-config:lock-file-maintenance",
     "github>sanity-io/renovate-config:node-lts",
     "github>sanity-io/renovate-config:schedule",
     "github>sanity-io/renovate-config:group-recommended",
