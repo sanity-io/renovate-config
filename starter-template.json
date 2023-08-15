@@ -7,17 +7,17 @@
     "schedule:quarterly",
     ":semanticCommitTypeAll(chore)"
   ],
-  "ignorePresets": [
-    "github>sanity-io/renovate-config:schedule",
-    "github>sanity-io/renovate-config:semantic-commit-type",
-    "github>sanity-io/renovate-config:strategy"
-  ],
   "packageRules": [
     {
       "matchDepTypes": ["engines"],
       "matchManagers": ["npm"],
       "rangeStrategy": "widen"
     }
+  ],
+  "ignorePresets": [
+    "github>sanity-io/renovate-config:schedule",
+    "github>sanity-io/renovate-config:semantic-commit-type",
+    "github>sanity-io/renovate-config:strategy"
   ],
   "rangeStrategy": "pin"
 }

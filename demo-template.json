@@ -7,7 +7,7 @@
     "schedule:quarterly"
   ],
   "ignorePresets": [
-    "schedule:quarterly",
-    "github>sanity-io/renovate-config:group-non-major"
+    "github>sanity-io/renovate-config:group-non-major",
+    "schedule:quarterly"
   ]
 }
