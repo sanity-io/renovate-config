@@ -28,5 +28,10 @@
       "matchDepTypes": ["packageManager"],
       "matchManagers": ["npm"]
     }
-  ]
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["every 12 months on the first day of the month"],
+    "dependencyDashboardApproval": true
+  }
 }
