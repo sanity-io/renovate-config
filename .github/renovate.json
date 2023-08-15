@@ -2,13 +2,8 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>sanity-io/renovate-config"],
   "rebaseWhen": "behind-base-branch",
-  "packageRules": [
-    {
-      "matchManagers": ["npm"],
-      "lockfileMaintenance": {
-        "enabled": true,
-        "dependencyDashboardApproval": true
-      }
-    }
-  ]
+  "lockfileMaintenance": {
+    "enabled": true,
+    "dependencyDashboardApproval": true
+  }
 }
