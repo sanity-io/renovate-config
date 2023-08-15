@@ -9,7 +9,6 @@
       "matchUpdateTypes": [
         "bump",
         "digest",
-        "lockFileMaintenance",
         "lockfileUpdate",
         "minor",
         "patch",
