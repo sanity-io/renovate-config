@@ -1,12 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>sanity-io/renovate-config"],
-  "rebaseWhen": "behind-base-branch",
-  "lockFileMaintenance": {
-    "enabled": true,
-    "groupName": null,
-    "groupSlug": null,
-    "schedule": ["every 12 months on the first day of the month"],
-    "dependencyDashboardApproval": true
-  }
+  "rebaseWhen": "behind-base-branch"
 }
