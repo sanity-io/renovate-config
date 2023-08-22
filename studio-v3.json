@@ -9,12 +9,6 @@
       "matchPackagePrefixes": ["@types/react", "react"]
     },
     {
-      "description": "Use the latest major of styled-components that is supported by Sanity Studio v3",
-      "allowedVersions": "<=5",
-      "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
-      "matchPackagePrefixes": ["styled-components"]
-    },
-    {
       "description": "Upgrade Sanity Studio v2 dependencies to v3",
       "matchDatasources": ["npm"],
       "matchPackageNames": [
