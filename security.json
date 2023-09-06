@@ -4,7 +4,7 @@
   "packageRules": [
     {
       "dependencyDashboardApproval": true,
-      "excludePackagePrefixes": ["actions/", "github/", "pnpm/"],
+      "excludePackagePrefixes": ["actions/", "github/", "google-github-actions/", "pnpm/"],
       "groupName": null,
       "matchDepTypes": ["action"],
       "pinDigests": true,
