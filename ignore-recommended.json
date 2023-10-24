@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Deps that are noisy and don't need to be automatically maintained",
   "ignoreDeps": [
-    " log-symbols",
+    "log-symbols",
     "@types/debug",
     "@types/inquirer",
     "@types/jsdom",
