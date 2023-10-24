@@ -1,5 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Deps that are noisy and don't need to be automatically maintained",
-  "ignoreDeps": ["husky", "lint-staged"]
+  "ignoreDeps": ["husky", "lint-staged", "dotenv", "dotenv-flow", "connect-history-api-fallback", "debug", "@types/debug", "dotenv-expand", "execa", "file-url", "get-uri", "glob", "globby", " log-symbols", "p-map", "p-queue", "semver", "@types/semver", "split2", "string-to-stream", "validate-npm-package-name", "@types/validate-npm-package-name", "which", "@types/which", "jsdom", "@types/jsdom", "inquirer", "@types/inquirer", "@types/node"]
 }
