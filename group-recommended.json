@@ -25,10 +25,7 @@
       "groupName": "popmotion",
       "matchPackageNames": ["popmotion", "stylefire"]
     },
-    {
-      "groupName": "slate",
-      "matchPackageNames": ["slate", "slate-react"]
-    },
+    { "groupName": "slate", "matchPackageNames": ["slate", "slate-react"] },
     {
       "groupName": "refractor",
       "matchPackageNames": ["react-refractor", "refractor"]
