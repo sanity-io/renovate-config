@@ -22,6 +22,6 @@
   },
   "devDependencies": {
     "prettier": "^3.2.5",
-    "prettier-plugin-packagejson": "^2.4.11"
+    "prettier-plugin-packagejson": "^2.4.12"
   }
 }
