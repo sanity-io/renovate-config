@@ -7,5 +7,6 @@
   ],
   "configMigration": true,
   "separateMultipleMajor": true,
-  "updateInternalDeps": true
+  "updateInternalDeps": true,
+  "dependencyDashboardApproval": true
 }
