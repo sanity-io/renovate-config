@@ -6,7 +6,7 @@
     "github>sanity-io/renovate-config:branding"
   ],
   "configMigration": true,
+  "dependencyDashboardApproval": true,
   "separateMultipleMajor": true,
-  "updateInternalDeps": true,
-  "dependencyDashboardApproval": true
+  "updateInternalDeps": true
 }
