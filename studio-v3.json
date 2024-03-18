@@ -9,12 +9,6 @@
       "matchPackagePrefixes": ["@types/react", "react"]
     },
     {
-      "description": "Use a TypeScript version compatible with the Studio Schema API",
-      "allowedVersions": "<=5.3",
-      "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
-      "matchPackageNames": ["typescript"]
-    },
-    {
       "description": "Upgrade Sanity Studio v2 dependencies to v3",
       "matchDatasources": ["npm"],
       "matchPackageNames": [
