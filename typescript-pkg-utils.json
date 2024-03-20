@@ -1,0 +1,11 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Pin TypeScript to the same version used by @sanity/pkg-utils",
+  "packageRules": [
+    {
+      "allowedVersions": "<=5.4.2",
+      "matchPackageNames": ["typescript"],
+      "schedule": ["at any time"]
+    }
+  ]
+}
