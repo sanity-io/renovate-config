@@ -23,5 +23,5 @@
       "replacementVersion": "1.9.3"
     }
   ],
-  "descriptions": "Presets that harden security for shared GitHub Action Workflows"
+  "description": "Presets that harden security for shared GitHub Action Workflows"
 }
