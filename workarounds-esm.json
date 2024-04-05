@@ -147,12 +147,8 @@
       "matchPackageNames": ["node-fetch"]
     },
     {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": [
-        "is-hotkey"
-      ],
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["is-hotkey"],
       "replacementName": "is-hotkey-esm",
       "replacementVersion": "1.0.0"
     }

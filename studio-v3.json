@@ -29,6 +29,6 @@
       "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
       "rangeStrategy": "pin",
       "matchPackageNames": ["framer-motion"]
-    },
+    }
   ]
 }
