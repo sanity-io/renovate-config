@@ -21,7 +21,7 @@
       "matchDepTypes": ["action"],
       "matchPackageNames": ["tibdex/github-app-token"],
       "replacementName": "actions/create-github-app-token",
-      "replacementVersion": "1.9.3"
+      "replacementVersion": "v1"
     }
   ]
 }
