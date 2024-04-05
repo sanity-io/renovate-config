@@ -1,8 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Pin `github-action` digests. As per GitHubs [security best practice](https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#using-third-party-actions).",
+  "descriptions": "Presets that harden security for shared GitHub Action Workflows",
   "packageRules": [
     {
+      "description": "Pin `github-action` digests. As per GitHubs [security best practice](https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#using-third-party-actions).",
       "dependencyDashboardApproval": true,
       "excludePackagePrefixes": [
         "actions/",
@@ -14,6 +15,13 @@
       "matchDepTypes": ["action"],
       "pinDigests": true,
       "schedule": []
+    },
+     {
+      "description": "GitHub has forked the tibdex/github-app-token workflow and have vowed to maintain it and uphold strict security best practices: https://github.com/tibdex/github-app-token/issues/99#issuecomment-1787602874",
+      "matchDepTypes": ["action"],
+      "matchPackageNames": ["tibdex/github-app-token"],
+      "replacementName": "actions/create-github-app-token",
+      "replacementVersion": "1"
     }
   ]
 }
