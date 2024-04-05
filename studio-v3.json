@@ -27,8 +27,8 @@
       "description": "Use the latest stable and tested version of framer-motion used by sanity, @sanity/ui and @sanity/presentation",
       "allowedVersions": "<=11.0.8",
       "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
-      "rangeStrategy": "pin",
-      "matchPackageNames": ["framer-motion"]
+      "matchPackageNames": ["framer-motion"],
+      "rangeStrategy": "pin"
     }
   ]
 }
