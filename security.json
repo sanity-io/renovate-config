@@ -1,5 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Presets that harden security for shared GitHub Action Workflows",
   "packageRules": [
     {
       "description": "Pin `github-action` digests. As per GitHubs [security best practice](https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#using-third-party-actions).",
@@ -22,6 +23,5 @@
       "replacementName": "actions/create-github-app-token",
       "replacementVersion": "1.9.3"
     }
-  ],
-  "description": "Presets that harden security for shared GitHub Action Workflows"
+  ]
 }
