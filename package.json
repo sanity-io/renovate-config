@@ -1,22 +1,22 @@
 {
-  "type": "module",
   "name": "renovate-config",
+  "type": "module",
   "scripts": {
     "format": "prettier --ignore-path .gitignore --cache --write .",
     "test": "zx scripts/validate-config.js",
     "update:node": "node scripts/update-node-lts.js",
     "postupdate:node": "npx prettier --write node-lts.json",
-    "update:typescript": "node scripts/update-typescript.js",
-    "postupdate:typescript": "npx prettier --write typescript.json",
     "update:sorting": "zx scripts/update-sorting.js",
-    "postupdate:sorting": "npm run format"
+    "postupdate:sorting": "npm run format",
+    "update:typescript": "node scripts/update-typescript.js",
+    "postupdate:typescript": "npx prettier --write typescript.json"
   },
   "prettier": {
-    "semi": false,
-    "singleQuote": true,
     "plugins": [
       "prettier-plugin-packagejson"
-    ]
+    ],
+    "semi": false,
+    "singleQuote": true
   },
   "dependencies": {
     "@sanity/tsdoc": "1.0.18",
