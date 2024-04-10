@@ -1,5 +1,5 @@
 ---
-name: Maintain typescript-pkg-utils.json
+name: Maintain typescript.json
 
 on:
   push:
@@ -17,7 +17,7 @@ permissions:
 
 jobs:
   run:
-    name: Is typescript-pkg-utils.json outdated? 🤔
+    name: Is typescript.json outdated? 🤔
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -41,7 +41,7 @@ jobs:
           author: github-actions <41898282+github-actions[bot]@users.noreply.github.com>
           body: I ran `npm run update:typescript` 🧑‍💻
           branch: actions/create-typescript-pr
-          commit-message: 'fix(typescript-pkg-utils.json): 🤖 ✨'
+          commit-message: 'fix(typescript.json): 🤖 ✨'
           labels: 🤖 bot
-          title: 'fix(typescript-pkg-utils.json): update typescript version'
+          title: 'fix(typescript.json): update typescript version'
           token: ${{ steps.app-token.outputs.token }}

@@ -7,17 +7,19 @@
     "update:node": "node scripts/update-node-lts.js",
     "postupdate:node": "npx prettier --write node-lts.json",
     "update:typescript": "node scripts/update-typescript.js",
-    "postupdate:typescript": "npx prettier --write typescript-pkg-utils.json",
+    "postupdate:typescript": "npx prettier --write typescript.json",
     "update:sorting": "zx scripts/update-sorting.js",
     "postupdate:sorting": "npm run format"
   },
   "prettier": {
     "semi": false,
     "singleQuote": true,
-    "plugins": ["prettier-plugin-packagejson"]
+    "plugins": [
+      "prettier-plugin-packagejson"
+    ]
   },
   "dependencies": {
-    "@sanity/pkg-utils": "6.0.0",
+    "@sanity/tsdoc": "1.0.18",
     "@types/node": "^20.0.0",
     "@types/sort-object-keys": "^1.1.0",
     "renovate": "^37.227.1",
