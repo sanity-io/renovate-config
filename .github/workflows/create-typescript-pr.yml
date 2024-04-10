@@ -1,0 +1,47 @@
+---
+name: Maintain typescript-pkg-utils.json
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'package.json'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    name: Is typescript-pkg-utils.json outdated? 🤔
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          cache: npm
+          node-version: lts/*
+      - run: npm ci --ignore-scripts
+      - run: npm run update:typescript
+      - uses: actions/create-github-app-token@v1
+        id: app-token
+        if: ${{ env.HAVE_ECOSPARK_APP_ID == 'true' }}
+        env:
+          HAVE_ECOSPARK_APP_ID: ${{ secrets.ECOSPARK_APP_ID != '' }}
+        with:
+          app-id: ${{ secrets.ECOSPARK_APP_ID }}
+          private-key: ${{ secrets.ECOSPARK_APP_PRIVATE_KEY }}
+      - uses: peter-evans/create-pull-request@70a41aba780001da0a30141984ae2a0c95d8704e # v6
+        if: ${{ steps.app-token.outputs.token != '' }}
+        with:
+          author: github-actions <41898282+github-actions[bot]@users.noreply.github.com>
+          body: I ran `npm run update:typescript` 🧑‍💻
+          branch: actions/create-typescript-pr
+          commit-message: 'fix(typescript-pkg-utils.json): 🤖 ✨'
+          labels: 🤖 bot
+          title: 'fix(typescript-pkg-utils.json): update typescript version'
+          token: ${{ steps.app-token.outputs.token }}
