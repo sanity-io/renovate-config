@@ -19,12 +19,12 @@
     "singleQuote": true
   },
   "dependencies": {
-    "@sanity/tsdoc": "1.0.53",
+    "@sanity/tsdoc": "1.0.62",
     "@types/node": "^20.0.0",
     "@types/sort-object-keys": "^1.1.0",
     "renovate": "^37.227.1",
     "sort-object-keys": "^1.1.2",
-    "zx": "8.0.2"
+    "zx": "8.1.0"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
