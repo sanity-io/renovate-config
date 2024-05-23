@@ -19,7 +19,7 @@
     "singleQuote": true
   },
   "dependencies": {
-    "@sanity/tsdoc": "1.0.62",
+    "@sanity/tsdoc": "1.0.64",
     "@types/node": "^20.0.0",
     "@types/sort-object-keys": "^1.1.0",
     "renovate": "^37.227.1",
