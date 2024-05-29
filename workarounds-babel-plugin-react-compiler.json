@@ -4,7 +4,7 @@
   "packageRules": [
     {
       "followTag": "latest",
-      "matchPackageNames": ["babel-plugin-react-compiler"]
+      "matchPackageNames": ["babel-plugin-react-compiler", "eslint-plugin-react-compiler"]
     }
   ]
 }
