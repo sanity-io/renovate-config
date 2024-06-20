@@ -9,6 +9,7 @@
         "actions/",
         "github/",
         "google-github-actions/",
+        "googleapis/",
         "pnpm/"
       ],
       "groupName": null,
