@@ -4,7 +4,7 @@
   "packageRules": [
     {
       "description": "Groups every update type except major",
-      "excludeDepNames": ["npm", "pnpm", "yarn"],
+      "matchDepNames": ["!npm", "!pnpm", "!yarn"],
       "groupName": "non-major",
       "matchUpdateTypes": [
         "bump",
