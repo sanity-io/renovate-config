@@ -6,7 +6,7 @@
       "description": "Use the latest major of React that is supported by Sanity Studio v3",
       "allowedVersions": "<=18",
       "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
-      "matchPackagePrefixes": ["@types/react", "react"]
+      "matchPackageNames": ["@types/react{/,}**", "react{/,}**"]
     },
     {
       "description": "Upgrade Sanity Studio v2 dependencies to v3",

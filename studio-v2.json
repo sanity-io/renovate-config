@@ -4,7 +4,7 @@
   "packageRules": [
     {
       "allowedVersions": "<=17",
-      "matchPackagePrefixes": ["@types/react", "react"]
+      "matchPackageNames": ["@types/react{/,}**", "react{/,}**"]
     }
   ]
 }

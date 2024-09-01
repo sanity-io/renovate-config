@@ -4,22 +4,20 @@
   "packageRules": [
     {
       "groupName": "three packages",
-      "matchPackageNames": ["three"],
-      "matchPackagePatterns": ["^@react-three/"]
+      "matchPackageNames": ["three", "/^@react-three//"]
     },
-    { "groupName": "reach packages", "matchPackagePatterns": ["^@reach/"] },
+    { "groupName": "reach packages", "matchPackageNames": ["/^@reach//"] },
     {
       "groupName": "grunt packages",
-      "matchPackageNames": ["grunt", "load-grunt-tasks"],
-      "matchPackagePatterns": ["^grunt-"]
+      "matchPackageNames": ["grunt", "load-grunt-tasks", "/^grunt-/"]
     },
     {
       "groupName": "rollup packages",
-      "matchPackagePatterns": ["^@rollup/", "^rollup"]
+      "matchPackageNames": ["/^@rollup//", "/^rollup/"]
     },
     {
       "groupName": "scroll-into-view",
-      "matchPackagePatterns": ["scroll-into-view"]
+      "matchPackageNames": ["/scroll-into-view/"]
     },
     {
       "groupName": "popmotion",
