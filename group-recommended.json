@@ -4,12 +4,12 @@
   "packageRules": [
     {
       "groupName": "three packages",
-      "matchPackageNames": ["three", "/^@react-three//"]
+      "matchPackageNames": ["/^@react-three//", "three"]
     },
     { "groupName": "reach packages", "matchPackageNames": ["/^@reach//"] },
     {
       "groupName": "grunt packages",
-      "matchPackageNames": ["grunt", "load-grunt-tasks", "/^grunt-/"]
+      "matchPackageNames": ["/^grunt-/", "grunt", "load-grunt-tasks"]
     },
     {
       "groupName": "rollup packages",

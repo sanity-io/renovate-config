@@ -7,15 +7,15 @@
       "dependencyDashboardApproval": true,
       "groupName": null,
       "matchDepTypes": ["action"],
-      "pinDigests": true,
-      "schedule": [],
       "matchPackageNames": [
         "!actions/{/,}**",
         "!github/{/,}**",
         "!google-github-actions/{/,}**",
         "!googleapis/{/,}**",
         "!pnpm/{/,}**"
-      ]
+      ],
+      "pinDigests": true,
+      "schedule": []
     },
     {
       "description": "GitHub has forked the tibdex/github-app-token workflow and have vowed to maintain it and uphold strict security best practices: https://github.com/tibdex/github-app-token/issues/99#issuecomment-1787602874",
