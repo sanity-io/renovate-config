@@ -6,6 +6,7 @@ const { typescript: version } = pkg.dependencies
 const url = new URL(`../typescript.json`, import.meta.url)
 const config = JSON.parse(await readFile(url))
 
-config.packageRules[0].allowedVersions = `<=${version}`
+const [major, minor] = version.split('.')
+config.packageRules[0].allowedVersions = `<=${major}.${minor}.x`
 
 await writeFile(url, JSON.stringify(config))
