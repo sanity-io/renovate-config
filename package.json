@@ -19,15 +19,15 @@
     "singleQuote": true
   },
   "dependencies": {
-    "@sanity/tsdoc": "1.0.83",
+    "@sanity/tsdoc": "1.0.98",
     "@types/node": "^20.0.0",
     "@types/sort-object-keys": "^1.1.0",
     "renovate": "^37.227.1",
     "sort-object-keys": "^1.1.2",
-    "zx": "8.1.4"
+    "zx": "8.1.5"
   },
   "devDependencies": {
     "prettier": "^3.3.3",
-    "prettier-plugin-packagejson": "^2.5.1"
+    "prettier-plugin-packagejson": "^2.5.2"
   }
 }
