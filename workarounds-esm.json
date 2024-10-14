@@ -123,7 +123,7 @@
     {
       "allowedVersions": "<=8",
       "matchManagers": ["npm"],
-      "matchPackageNames": ["eslint", "inquirer", "supports-color"]
+      "matchPackageNames": ["inquirer", "supports-color"]
     },
     {
       "allowedVersions": "<=9",
