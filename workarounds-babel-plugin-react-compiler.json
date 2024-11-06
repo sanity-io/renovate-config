@@ -4,6 +4,7 @@
   "packageRules": [
     {
       "followTag": "beta",
+      "groupName": "react-compiler",
       "matchPackageNames": [
         "babel-plugin-react-compiler",
         "eslint-plugin-react-compiler",
