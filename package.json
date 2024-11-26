@@ -24,10 +24,10 @@
     "@types/sort-object-keys": "^1.1.0",
     "renovate": "^39.0.0",
     "sort-object-keys": "^1.1.2",
-    "zx": "8.1.9"
+    "zx": "8.2.2"
   },
   "devDependencies": {
-    "prettier": "^3.3.3",
-    "prettier-plugin-packagejson": "^2.5.3"
+    "prettier": "^3.4.0",
+    "prettier-plugin-packagejson": "^2.5.6"
   }
 }
