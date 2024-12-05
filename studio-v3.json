@@ -4,7 +4,7 @@
   "packageRules": [
     {
       "description": "Use the latest major of React that is supported by Sanity Studio v3",
-      "allowedVersions": "<=18",
+      "allowedVersions": "<=19",
       "matchDepTypes": ["dependencies", "devDependencies", "resolutions"],
       "matchPackageNames": ["@types/react{/,}**", "react{/,}**"]
     },
