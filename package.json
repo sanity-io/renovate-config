@@ -19,10 +19,10 @@
     "singleQuote": true
   },
   "dependencies": {
-    "@sanity/tsdoc": "1.0.136",
+    "@sanity/tsdoc": "1.0.144",
     "@types/node": "^20.0.0",
     "@types/sort-object-keys": "^1.1.0",
-    "renovate": "^39.0.0",
+    "renovate": "^39.47.1",
     "sort-object-keys": "^1.1.2",
     "zx": "8.2.2"
   },
