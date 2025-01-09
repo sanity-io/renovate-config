@@ -2,7 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Deps that are noisy and don't need to be automatically maintained",
   "ignoreDeps": [
-    "@types/debug",
     "@types/inquirer",
     "@types/jsdom",
     "@types/node",
@@ -10,7 +9,6 @@
     "@types/validate-npm-package-name",
     "@types/which",
     "connect-history-api-fallback",
-    "debug",
     "dotenv",
     "dotenv-expand",
     "dotenv-flow",
