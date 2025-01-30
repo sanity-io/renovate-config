@@ -12,7 +12,8 @@
         "!github/{/,}**",
         "!google-github-actions/{/,}**",
         "!googleapis/{/,}**",
-        "!pnpm/{/,}**"
+        "!pnpm/{/,}**",
+        "!sanity-io/{/,}**"
       ],
       "pinDigests": true,
       "schedule": []
