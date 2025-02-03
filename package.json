@@ -24,7 +24,7 @@
     "@types/sort-object-keys": "^1.1.0",
     "renovate": "^39.0.0",
     "sort-object-keys": "^1.1.2",
-    "zx": "8.3.1"
+    "zx": "8.3.2"
   },
   "devDependencies": {
     "prettier": "^3.4.2",
