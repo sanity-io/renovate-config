@@ -13,7 +13,8 @@
         "!google-github-actions/{/,}**",
         "!googleapis/{/,}**",
         "!pnpm/{/,}**",
-        "!sanity-io/{/,}**"
+        "!sanity-io/{/,}**",
+        "!useblacksmith/{/,}**"
       ],
       "pinDigests": true,
       "schedule": []
