@@ -14,7 +14,8 @@
         "!googleapis/{/,}**",
         "!pnpm/{/,}**",
         "!sanity-io/{/,}**",
-        "!useblacksmith/{/,}**"
+        "!useblacksmith/{/,}**",
+        "!cypress-io/{/,}**"
       ],
       "pinDigests": true,
       "schedule": []
