@@ -30,7 +30,7 @@ jobs:
           key: prettier-${{ hashFiles('package-lock.json') }}-${{ hashFiles('.gitignore') }}
       - run: npm run format
       - run: git restore .github/workflows
-      - uses: actions/create-github-app-token@v1
+      - uses: actions/create-github-app-token@v2
         id: app-token
         if: ${{ env.HAVE_ECOSPARK_APP_ID == 'true' }}
         env:
