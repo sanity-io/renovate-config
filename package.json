@@ -22,7 +22,7 @@
     "@sanity/tsdoc": "2.0.25",
     "@types/node": "^20.0.0",
     "@types/sort-object-keys": "^1.1.3",
-    "renovate": "^39.264.0",
+    "renovate": "^40.11.14",
     "sort-object-keys": "^1.1.3",
     "zx": "8.3.1"
   },
