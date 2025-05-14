@@ -9,13 +9,13 @@
       "matchDepTypes": ["action"],
       "matchPackageNames": [
         "!actions/{/,}**",
+        "!cypress-io/{/,}**",
         "!github/{/,}**",
         "!google-github-actions/{/,}**",
         "!googleapis/{/,}**",
         "!pnpm/{/,}**",
         "!sanity-io/{/,}**",
-        "!useblacksmith/{/,}**",
-        "!cypress-io/{/,}**"
+        "!useblacksmith/{/,}**"
       ],
       "pinDigests": true,
       "schedule": []
