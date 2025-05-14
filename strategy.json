@@ -4,7 +4,6 @@
   "packageRules": [
     {
       "matchDepTypes": [
-        "dependencies",
         "optionalDependencies",
         "overrides",
         "resolutions"
@@ -13,7 +12,7 @@
       "rangeStrategy": "update-lockfile"
     },
     {
-      "matchDepTypes": ["devDependencies"],
+      "matchDepTypes": ["dependencies", "devDependencies"],
       "matchManagers": ["npm"],
       "rangeStrategy": "bump"
     },
