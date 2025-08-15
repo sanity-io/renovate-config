@@ -13,7 +13,6 @@
     "github>sanity-io/renovate-config:schedule",
     "github>sanity-io/renovate-config:group-recommended",
     "github>sanity-io/renovate-config:group-non-major",
-    "github>sanity-io/renovate-config:ignore-recommended",
     "github>sanity-io/renovate-config:workarounds-esm",
     "github>sanity-io/renovate-config:workarounds-babel-plugin-react-compiler",
     "github>sanity-io/renovate-config:dedupe"
