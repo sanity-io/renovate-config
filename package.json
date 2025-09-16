@@ -23,7 +23,7 @@
     "@types/node": "^22.18.4",
     "@types/sort-object-keys": "^1.1.3",
     "renovate": "^41.115.2",
-    "sort-object-keys": "^1.1.3",
+    "sort-object-keys": "^2.0.0",
     "zx": "8.3.1"
   },
   "devDependencies": {
