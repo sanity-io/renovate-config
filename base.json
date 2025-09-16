@@ -7,7 +7,11 @@
   ],
   "configMigration": true,
   "dependencyDashboardApproval": true,
+  "gitIgnoredAuthors": [
+    "128108030+ecospark[bot]@users.noreply.github.com",
+    "128108030+squiggler[bot]@users.noreply.github.com",
+    "143032650+ecoscript[bot]@users.noreply.github.com"
+  ],
   "separateMultipleMajor": true,
-  "updateInternalDeps": true,
-  "gitIgnoredAuthors": ["143032650+ecoscript[bot]@users.noreply.github.com", "128108030+ecospark[bot]@users.noreply.github.com", "128108030+squiggler[bot]@users.noreply.github.com"]
+  "updateInternalDeps": true
 }
