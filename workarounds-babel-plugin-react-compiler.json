@@ -1,13 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Workaround how babel-plugin-react-compiler is publishing experimental versions on the latest tag, without this workaround renovate will downgrade the version to 0.0.0",
+  "description": "Ensures babel-plugin-react-compiler, react-compiler-runtime and eslint-plugin-react-hooks all update together",
   "packageRules": [
     {
-      "followTag": "rc",
+      "followTag": "latest",
       "groupName": "react-compiler",
       "matchPackageNames": [
         "babel-plugin-react-compiler",
-        "eslint-plugin-react-compiler",
+        "eslint-plugin-react-hooks",
         "react-compiler-runtime"
       ]
     }
