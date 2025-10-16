@@ -7,6 +7,7 @@
       "matchPackageNames": [
         "/^@portabletext\\//",
         "/^@sanity\\//",
+        "/^next-sanity$/",
         "/^groq-js$/",
         "/^react-rx$/",
         "/^use-effect-event$/"
