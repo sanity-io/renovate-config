@@ -87,20 +87,20 @@ While `studio-v2` and `studio-v3` use presets that are handy if you're building 
 ## Scaling PR noise, gentler onboarding for large projects
 
 Depending on the project, the default behavior might result in too much noise. Especially if it's a large monorepo, with many outdated dependencies, and many developers sending in PRs on a general basis.
-For such projects it's better to tweak the preset to use a more manual and granular mode:
+For such projects it's better to tweak the preset to use a more manual and granular mode.
+
+By default, the preset enables `dependencyDashboardApproval`, which means Renovate will only create PRs when a developer checks off a specific dependency update in the "Dependency Dashboard" issue. You can disable this behavior if you want automatic PRs:
 
 ```json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "github>sanity-io/renovate-config",
-    ":dependencyDashboardApproval"
-  ],
+  "extends": ["github>sanity-io/renovate-config"],
+  "dependencyDashboardApproval": false,
   "ignorePresets": ["github>sanity-io/renovate-config:group-non-major"]
 }
 ```
 
-With this setup Renovatebot will only create PRs when a developer checks off a specific dependency update in the "Dependency Dashboard" issue. And by turning off `group-non-major` it'll show a more granular list over dependencies instead of creating a very large PR that groups every `patch` and `minor` update together.
+With this setup Renovatebot will create PRs automatically (since `dependencyDashboardApproval` is disabled), and by turning off `group-non-major` it'll show a more granular list over dependencies instead of creating a very large PR that groups every `patch` and `minor` update together.
 If you don't want any grouping but prefer each dependency to have its own PR you can add `github>sanity-io/renovate-config:group-recommended` to the `ignorePresets` array.
 
 ## Scaling up momentum, when a project only cares about major updates
