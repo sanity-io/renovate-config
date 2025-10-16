@@ -1,18 +1,18 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Wait 3 days before updating a package",
-  "minimumReleaseAge": "3 days",
   "packageRules": [
     {
       "description": "Exclude @sanity/* packages from minimumReleaseAge (no delay for internal packages)",
       "matchPackageNames": [
-        "/^@sanity\\//",
         "/^@portabletext\\//",
+        "/^@sanity\\//",
+        "/^groq-js$/",
         "/^react-rx$/",
-        "/^use-effect-event$/",
-        "/^groq-js$/"
+        "/^use-effect-event$/"
       ],
       "minimumReleaseAge": "0 days"
     }
-  ]
+  ],
+  "minimumReleaseAge": "3 days"
 }
