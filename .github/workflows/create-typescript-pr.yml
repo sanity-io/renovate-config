@@ -5,7 +5,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'package.json'
+      - "package.json"
   workflow_dispatch:
 
 concurrency:
@@ -23,7 +23,6 @@ jobs:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v6
         with:
-          cache: npm
           node-version: lts/*
       - run: npm ci --ignore-scripts
       - run: npm run update:typescript
@@ -40,8 +39,8 @@ jobs:
         with:
           body: I ran `npm run update:typescript` 🧑‍💻
           branch: actions/create-typescript-pr
-          commit-message: 'fix(typescript.json): 🤖 ✨'
+          commit-message: "fix(typescript.json): 🤖 ✨"
           labels: 🤖 bot
           sign-commits: true
-          title: 'fix(typescript.json): update typescript version'
+          title: "fix(typescript.json): update typescript version"
           token: ${{ steps.app-token.outputs.token }}

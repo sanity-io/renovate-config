@@ -1,5 +1,5 @@
 ---
-name: Update @sanity/tsdoc
+name: Update @sanity/pkg-utils
 
 on:
   workflow_dispatch:
@@ -13,15 +13,14 @@ permissions:
 
 jobs:
   run:
-    name: Can the @sanity/tsdoc dependency be updated? 🤔
+    name: Can the @sanity/pkg-utils dependency be updated? 🤔
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@v5
         with:
-          cache: npm
           node-version: lts/*
-      - run: npm install @sanity/tsdoc@latest --save-exact
+      - run: npm install @sanity/pkg-utils@latest --save-exact
       - uses: actions/create-github-app-token@v2
         id: app-token
         if: ${{ env.HAVE_ECOSPARK_APP_ID == 'true' }}
@@ -33,10 +32,10 @@ jobs:
       - uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7
         if: ${{ steps.app-token.outputs.token != '' }}
         with:
-          body: I ran `npm install @sanity/tsdoc@latest --save-exact` 🧑‍💻
-          branch: actions/install-tsdoc
-          commit-message: 'fix(deps): update @sanity/tsdoc'
+          body: I ran `npm install @sanity/pkg-utils@latest --save-exact` 🧑‍💻
+          branch: actions/install-pkg-utils
+          commit-message: "fix(deps): update @sanity/pkg-utils"
           labels: 🤖 bot
           sign-commits: true
-          title: 'fix(deps): update @sanity/tsdoc'
+          title: "fix(deps): update @sanity/pkg-utils"
           token: ${{ steps.app-token.outputs.token }}

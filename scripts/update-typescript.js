@@ -1,7 +1,7 @@
-import { readFile, writeFile } from 'node:fs/promises'
-import pkg from '@sanity/tsdoc/package.json' with { type: 'json' }
+import {readFile, writeFile} from 'node:fs/promises'
+import pkg from '@sanity/pkg-utils/package.json' with {type: 'json'}
 
-const { typescript: version } = pkg.devDependencies
+const {typescript: version} = pkg.devDependencies
 
 const url = new URL(`../typescript.json`, import.meta.url)
 const config = JSON.parse(await readFile(url))

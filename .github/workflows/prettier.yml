@@ -21,7 +21,6 @@ jobs:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v6
         with:
-          cache: npm
           node-version: lts/*
       - run: npm ci --ignore-scripts --only-dev
       - uses: actions/cache@v4
@@ -43,8 +42,8 @@ jobs:
         with:
           body: I ran `npm run format` 🧑‍💻
           branch: actions/prettier-if-needed
-          commit-message: 'chore(prettier): 🤖 ✨'
+          commit-message: "chore(prettier): 🤖 ✨"
           labels: 🤖 bot
           sign-commits: true
-          title: 'chore(prettier): fix unformatted files'
+          title: "chore(prettier): fix unformatted files"
           token: ${{ steps.app-token.outputs.token }}
