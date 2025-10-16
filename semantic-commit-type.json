@@ -2,18 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Set semantic commit type based on advanced rules",
   "packageRules": [
-    { "matchManagers": ["npm"], "semanticCommitType": "chore" },
+    {"matchManagers": ["npm"], "semanticCommitType": "chore"},
     {
       "group": {
         "semanticCommitScope": "{{#if isLockfileUpdate}}{{#if (and isRange isSingleVersion)}}deps{{else}}lockfile{{/if}}{{else}}deps{{/if}}",
         "semanticCommitType": "{{#if isLockfileUpdate}}{{#if (and isRange isSingleVersion)}}fix{{else}}chore{{/if}}{{else}}fix{{/if}}"
       },
-      "matchDepTypes": [
-        "dependencies",
-        "engines",
-        "optionalDependencies",
-        "peerDependencies"
-      ],
+      "matchDepTypes": ["dependencies", "engines", "optionalDependencies", "peerDependencies"],
       "matchManagers": ["npm"],
       "semanticCommitScope": "{{#if isLockfileUpdate}}lockfile{{else}}deps{{/if}}",
       "semanticCommitType": "{{#if isLockfileUpdate}}chore{{else}}fix{{/if}}"

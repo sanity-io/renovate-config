@@ -15,12 +15,9 @@ for (const file of files) {
         throw new Error(`Warnings found in config: ${file}`)
       }
     } catch (p) {
-      throw new Error(
-        `Validation failed for ${file}: ${p.stderr || p.stdout || p.message}`,
-        {
-          cause: p.errors?.[0] || p,
-        },
-      )
+      throw new Error(`Validation failed for ${file}: ${p.stderr || p.stdout || p.message}`, {
+        cause: p.errors?.[0] || p,
+      })
     }
   })
 }

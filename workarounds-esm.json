@@ -5,11 +5,7 @@
     {
       "allowedVersions": "<=1",
       "matchManagers": ["npm"],
-      "matchPackageNames": [
-        "@sindresorhus/slugify",
-        "node-version-alias",
-        "tempy"
-      ]
+      "matchPackageNames": ["@sindresorhus/slugify", "node-version-alias", "tempy"]
     },
     {
       "allowedVersions": "<=2",
@@ -125,16 +121,8 @@
       "matchManagers": ["npm"],
       "matchPackageNames": ["inquirer", "supports-color"]
     },
-    {
-      "allowedVersions": "<=9",
-      "matchManagers": ["npm"],
-      "matchPackageNames": ["meow"]
-    },
-    {
-      "allowedVersions": "<=10",
-      "matchManagers": ["npm"],
-      "matchPackageNames": ["got"]
-    },
+    {"allowedVersions": "<=9", "matchManagers": ["npm"], "matchPackageNames": ["meow"]},
+    {"allowedVersions": "<=10", "matchManagers": ["npm"], "matchPackageNames": ["got"]},
     {
       "allowedVersions": "<=11",
       "matchManagers": ["npm"],

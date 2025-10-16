@@ -21,11 +21,7 @@ for (const file of files) {
         return [...value].sort()
       }
       // Sort the rest of the object, if we can
-      if (
-        typeof value === 'object' &&
-        !Array.isArray(value) &&
-        value !== null
-      ) {
+      if (typeof value === 'object' && !Array.isArray(value) && value !== null) {
         const {
           $schema = 'https://docs.renovatebot.com/renovate-schema.json',
           description,
