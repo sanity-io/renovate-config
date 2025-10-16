@@ -12,7 +12,7 @@ If keeping dependencies up to date is part of your job, then you have two option
 4. Some PRs should be grouped together to reduce noise, so you don't have to review 100s of PRs.
 5. If you have lockfiles (`yarn.lock`, `package-lock.json`, etc) you'll likely have merge conflicts for every dependency PR you created.
 6. If on a monorepo dedupe lockfiles after merging all the PRs, to avoid nasty bugs as some libraries, like `react`, breaks if multiple instances of it exists within the same render.
-7. Rince and repeat.
+7. Rinse and repeat.
 
 ## Option B
 
@@ -39,15 +39,19 @@ The default preset, `github>sanity-io/renovate-config`, is a composition of the 
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>sanity-io/renovate-config:base",
-    "github>sanity-io/renovate-config:branding",
+    "github>sanity-io/renovate-config:semantic-commit-type",
     "github>sanity-io/renovate-config:security",
     "github>sanity-io/renovate-config:strategy",
     "github>sanity-io/renovate-config:labels",
+    "github>sanity-io/renovate-config:lock-file-maintenance",
     "github>sanity-io/renovate-config:node-lts",
+    "github>sanity-io/renovate-config:typescript",
     "github>sanity-io/renovate-config:schedule",
+    "github>sanity-io/renovate-config:min-age-3days",
     "github>sanity-io/renovate-config:group-recommended",
     "github>sanity-io/renovate-config:group-non-major",
     "github>sanity-io/renovate-config:workarounds-esm",
+    "github>sanity-io/renovate-config:workarounds-babel-plugin-react-compiler",
     "github>sanity-io/renovate-config:dedupe"
   ]
 }

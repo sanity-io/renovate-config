@@ -1,0 +1,5 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Wait 3 days before updating a package",
+  "minimumReleaseAge": "3 days"
+}
