@@ -2,47 +2,24 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["group:linters", "group:postcss"],
   "packageRules": [
-    {
-      "groupName": "three packages",
-      "matchPackageNames": ["/^@react-three//", "three"]
-    },
-    { "groupName": "reach packages", "matchPackageNames": ["/^@reach//"] },
+    {"groupName": "three packages", "matchPackageNames": ["/^@react-three//", "three"]},
+    {"groupName": "reach packages", "matchPackageNames": ["/^@reach//"]},
     {
       "groupName": "grunt packages",
       "matchPackageNames": ["/^grunt-/", "grunt", "load-grunt-tasks"]
     },
-    {
-      "groupName": "rollup packages",
-      "matchPackageNames": ["/^@rollup//", "/^rollup/"]
-    },
-    {
-      "groupName": "scroll-into-view",
-      "matchPackageNames": ["/scroll-into-view/"]
-    },
-    {
-      "groupName": "popmotion",
-      "matchPackageNames": ["popmotion", "stylefire"]
-    },
-    { "groupName": "slate", "matchPackageNames": ["slate", "slate-react"] },
-    {
-      "groupName": "refractor",
-      "matchPackageNames": ["react-refractor", "refractor"]
-    },
+    {"groupName": "rollup packages", "matchPackageNames": ["/^@rollup//", "/^rollup/"]},
+    {"groupName": "scroll-into-view", "matchPackageNames": ["/scroll-into-view/"]},
+    {"groupName": "popmotion", "matchPackageNames": ["popmotion", "stylefire"]},
+    {"groupName": "slate", "matchPackageNames": ["slate", "slate-react"]},
+    {"groupName": "refractor", "matchPackageNames": ["react-refractor", "refractor"]},
     {
       "groupName": "semantic-release",
-      "matchPackageNames": [
-        "@sanity/semantic-release-preset",
-        "semantic-release"
-      ]
+      "matchPackageNames": ["@sanity/semantic-release-preset", "semantic-release"]
     },
     {
       "groupName": "ioredis",
-      "matchPackageNames": [
-        "@types/ioredis",
-        "@types/ioredis-mock",
-        "ioredis",
-        "ioredis-mock"
-      ]
+      "matchPackageNames": ["@types/ioredis", "@types/ioredis-mock", "ioredis", "ioredis-mock"]
     }
   ]
 }
