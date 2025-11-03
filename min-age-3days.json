@@ -6,10 +6,13 @@
       "description": "Exclude @sanity/* packages from minimumReleaseAge (no delay for internal packages)",
       "matchPackageNames": [
         "/^@portabletext\\//",
+        "/^@types\\//",
         "/^@sanity\\//",
+        "/^groq$/",
         "/^groq-js$/",
         "/^next-sanity$/",
         "/^react-rx$/",
+        "/^sanity$/",
         "/^use-effect-event$/"
       ],
       "minimumReleaseAge": "0 days"
