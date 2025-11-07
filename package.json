@@ -13,7 +13,7 @@
   },
   "prettier": "@sanity/prettier-config",
   "dependencies": {
-    "@sanity/pkg-utils": "8.1.29",
+    "@sanity/pkg-utils": "9.0.3",
     "@types/node": "^24.10.0",
     "@types/sort-object-keys": "^1.1.3",
     "renovate": "^41.169.3",
