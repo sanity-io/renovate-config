@@ -5,17 +5,17 @@
     {
       "description": "Exclude @sanity/* packages from minimumReleaseAge (no delay for internal packages)",
       "matchPackageNames": [
-        "/^@oxlint\\//",
         "/^@oxlint-tsgolint\\//",
+        "/^@oxlint\\//",
         "/^@portabletext\\//",
-        "/^@types\\//",
         "/^@sanity\\//",
+        "/^@types\\//",
+        "/^eslint-plugin-oxlint$/",
         "/^groq$/",
         "/^groq-js$/",
+        "/^next-sanity$/",
         "/^oxlint$/",
         "/^oxlint-tsgolint$/",
-        "/^eslint-plugin-oxlint$/",
-        "/^next-sanity$/",
         "/^react-rx$/",
         "/^sanity$/",
         "/^use-effect-event$/"
