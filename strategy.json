@@ -4,17 +4,14 @@
   "packageRules": [
     {
       "matchDepTypes": ["optionalDependencies", "overrides", "resolutions"],
-      "matchManagers": ["npm"],
       "rangeStrategy": "update-lockfile"
     },
     {
-      "matchDepTypes": ["dependencies", "devDependencies"],
-      "matchManagers": ["npm"],
+      "matchDepTypes": ["dependencies", "devDependencies", "pnpm.catalog"],
       "rangeStrategy": "bump"
     },
     {
       "matchDepTypes": ["engines", "peerDependencies"],
-      "matchManagers": ["npm"],
       "rangeStrategy": "widen"
     },
     {
