@@ -13,6 +13,7 @@
         "/^@sanity\\//",
         "/^@types\\//",
         "/^eslint-plugin-oxlint$/",
+        "/^get-it$/",
         "/^groq$/",
         "/^groq-js$/",
         "/^next$/",
