@@ -13,6 +13,7 @@
         "!github/{/,}**",
         "!google-github-actions/{/,}**",
         "!googleapis/{/,}**",
+        "!oven-sh/{/,}**",
         "!pnpm/{/,}**",
         "!sanity-io/{/,}**",
         "!useblacksmith/{/,}**"
