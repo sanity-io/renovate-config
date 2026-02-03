@@ -21,7 +21,7 @@
     "zx": "8.3.1"
   },
   "devDependencies": {
-    "@sanity/prettier-config": "^2.0.3",
+    "@sanity/prettier-config": "^3.0.0",
     "prettier": "^3.8.1"
   },
   "packageManager": "npm@11.6.2"
