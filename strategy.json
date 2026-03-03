@@ -4,7 +4,6 @@
   "packageRules": [
     {"matchDepTypes": ["engines", "peerDependencies"], "rangeStrategy": "widen"},
     {
-      "dependencyDashboardApproval": true,
       "groupName": "corepack",
       "matchDepTypes": ["packageManager"],
       "matchManagers": ["npm"]
