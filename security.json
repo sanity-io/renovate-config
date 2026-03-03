@@ -4,7 +4,6 @@
   "packageRules": [
     {
       "description": "Pin `github-action` digests. As per GitHubs [security best practice](https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#using-third-party-actions).",
-      "dependencyDashboardApproval": true,
       "groupName": null,
       "matchDepTypes": ["action"],
       "matchPackageNames": [
