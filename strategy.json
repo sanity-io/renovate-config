@@ -1,8 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Always widen `peerDependencies` and `engines`, while other types like `dependencies`, `devDependencies` are `update-lockfile`.",
+  "description": "Always widen `peerDependencies` and `engines`. npm `dependencies`/`devDependencies` use `bump`. Cargo dependencies use `update-lockfile`.",
   "packageRules": [
     {"matchDepTypes": ["engines", "peerDependencies"], "rangeStrategy": "widen"},
+    {"matchManagers": ["cargo"], "rangeStrategy": "update-lockfile"},
     {"groupName": "corepack", "matchDepTypes": ["packageManager"], "matchManagers": ["npm"]}
   ],
   "rangeStrategy": "bump"
