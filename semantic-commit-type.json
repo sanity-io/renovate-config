@@ -5,13 +5,13 @@
     {"matchManagers": ["npm"], "semanticCommitType": "chore"},
     {
       "group": {
-        "semanticCommitScope": "{{#if isLockfileUpdate}}{{#if (and isRange isSingleVersion)}}deps{{else}}lockfile{{/if}}{{else}}deps{{/if}}",
-        "semanticCommitType": "{{#if isLockfileUpdate}}{{#if (and isRange isSingleVersion)}}fix{{else}}chore{{/if}}{{else}}fix{{/if}}"
+        "semanticCommitScope": "deps",
+        "semanticCommitType": "fix"
       },
-      "matchDepTypes": ["dependencies", "engines", "optionalDependencies", "peerDependencies"],
+      "matchDepTypes": ["dependencies", "engines", "optionalDependencies", "peerDependencies", "pnpm.catalog.default"],
       "matchManagers": ["npm"],
-      "semanticCommitScope": "{{#if isLockfileUpdate}}lockfile{{else}}deps{{/if}}",
-      "semanticCommitType": "{{#if isLockfileUpdate}}chore{{else}}fix{{/if}}"
+      "semanticCommitScope": "deps",
+      "semanticCommitType": "fix"
     }
   ],
   "ignorePresets": [":semanticPrefixFixDepsChoreOthers"]
