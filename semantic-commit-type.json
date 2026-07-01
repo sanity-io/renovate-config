@@ -4,11 +4,14 @@
   "packageRules": [
     {"matchManagers": ["npm"], "semanticCommitType": "chore"},
     {
-      "group": {
-        "semanticCommitScope": "deps",
-        "semanticCommitType": "fix"
-      },
-      "matchDepTypes": ["dependencies", "engines", "optionalDependencies", "peerDependencies", "pnpm.catalog.default"],
+      "group": {"semanticCommitScope": "deps", "semanticCommitType": "fix"},
+      "matchDepTypes": [
+        "dependencies",
+        "engines",
+        "optionalDependencies",
+        "peerDependencies",
+        "pnpm.catalog.default"
+      ],
       "matchManagers": ["npm"],
       "semanticCommitScope": "deps",
       "semanticCommitType": "fix"
