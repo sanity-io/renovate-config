@@ -47,7 +47,6 @@ The default preset, `github>sanity-io/renovate-config`, is a composition of the 
     "github>sanity-io/renovate-config:node-lts",
     "github>sanity-io/renovate-config:typescript",
     "github>sanity-io/renovate-config:schedule",
-    "github>sanity-io/renovate-config:min-age-3days",
     "github>sanity-io/renovate-config:group-recommended",
     "github>sanity-io/renovate-config:group-non-major",
     "github>sanity-io/renovate-config:workarounds-esm",

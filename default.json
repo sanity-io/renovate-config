@@ -11,13 +11,13 @@
     "github>sanity-io/renovate-config:node-lts",
     "github>sanity-io/renovate-config:typescript",
     "github>sanity-io/renovate-config:schedule",
-    "github>sanity-io/renovate-config:min-age-3days",
     "github>sanity-io/renovate-config:group-recommended",
     "github>sanity-io/renovate-config:group-non-major",
     "github>sanity-io/renovate-config:workarounds-esm",
     "github>sanity-io/renovate-config:workarounds-babel-plugin-react-compiler"
   ],
   "onboardingConfigFileName": ".github/renovate.json",
+   "minimumReleaseAge": "1 day",
   "migratePresets": {
     "github>sanity-io/renovate-presets//ecosystem/auto": "github>sanity-io/renovate-config",
     "github>sanity-io/renovate-presets//ecosystem/automerge": "github>sanity-io/renovate-config:automerge",
