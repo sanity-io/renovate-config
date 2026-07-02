@@ -17,7 +17,7 @@
     "github>sanity-io/renovate-config:workarounds-babel-plugin-react-compiler"
   ],
   "onboardingConfigFileName": ".github/renovate.json",
-   "minimumReleaseAge": "1 day",
+  "minimumReleaseAge": "1 day",
   "migratePresets": {
     "github>sanity-io/renovate-presets//ecosystem/auto": "github>sanity-io/renovate-config",
     "github>sanity-io/renovate-presets//ecosystem/automerge": "github>sanity-io/renovate-config:automerge",
