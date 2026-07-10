@@ -17,7 +17,6 @@
     "github>sanity-io/renovate-config:workarounds-babel-plugin-react-compiler"
   ],
   "onboardingConfigFileName": ".github/renovate.json",
-  "minimumReleaseAge": "1 day",
   "migratePresets": {
     "github>sanity-io/renovate-presets//ecosystem/auto": "github>sanity-io/renovate-config",
     "github>sanity-io/renovate-presets//ecosystem/automerge": "github>sanity-io/renovate-config:automerge",
@@ -36,5 +35,6 @@
     "github>sanity-io/renovate-presets//ecosystem/studio-v3": "github>sanity-io/renovate-config:studio-v3",
     "github>sanity-io/renovate-presets//ecosystem/workaround-esm": "github>sanity-io/renovate-config:workarounds-esm",
     "github>sanity-io/renovate-presets:sanity-template": "github>sanity-io/renovate-config"
-  }
+  },
+  "minimumReleaseAge": "1 day"
 }
