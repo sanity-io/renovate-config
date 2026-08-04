@@ -1,0 +1,41 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Disable minimum release age for packages that should be updated without delay",
+  "packageRules": [
+    {
+      "description": "Update Sanity packages without a minimum release age",
+      "matchPackageNames": [
+        "/^@portabletext\\//",
+        "/^@sanity\\//",
+        "/^get-it$/",
+        "/^groq$/",
+        "/^groq-js$/",
+        "/^next-sanity$/",
+        "/^react-rx$/",
+        "/^sanity$/",
+        "/^use-effect-event$/"
+      ],
+      "minimumReleaseAge": "0 days"
+    },
+    {
+      "description": "Update other trusted packages without a minimum release age",
+      "matchPackageNames": [
+        "/^@next\\//",
+        "/^@oxfmt\\//",
+        "/^@oxlint-tsgolint\\//",
+        "/^@oxlint\\//",
+        "/^@types\\//",
+        "/^eslint-plugin-oxlint$/",
+        "/^next$/",
+        "/^oxfmt$/",
+        "/^oxlint$/",
+        "/^oxlint-tsgolint$/",
+        "/^pnpm$/",
+        "/^react$/",
+        "/^react-dom$/",
+        "/^react-is$/"
+      ],
+      "minimumReleaseAge": "0 days"
+    }
+  ]
+}
