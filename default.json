@@ -8,6 +8,7 @@
     "github>sanity-io/renovate-config:strategy",
     "github>sanity-io/renovate-config:labels",
     "github>sanity-io/renovate-config:lock-file-maintenance",
+    "github>sanity-io/renovate-config:rebase-when-conflicted",
     "github>sanity-io/renovate-config:node-lts",
     "github>sanity-io/renovate-config:typescript",
     "github>sanity-io/renovate-config:schedule",
