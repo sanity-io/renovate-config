@@ -1,0 +1,5 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Only rebase Renovate PRs when they have conflicts.",
+  "rebaseWhen": "conflicted"
+}

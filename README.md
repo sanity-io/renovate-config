@@ -44,6 +44,7 @@ The default preset, `github>sanity-io/renovate-config`, is a composition of the 
     "github>sanity-io/renovate-config:strategy",
     "github>sanity-io/renovate-config:labels",
     "github>sanity-io/renovate-config:lock-file-maintenance",
+    "github>sanity-io/renovate-config:rebase-when-conflicted",
     "github>sanity-io/renovate-config:node-lts",
     "github>sanity-io/renovate-config:typescript",
     "github>sanity-io/renovate-config:schedule",
@@ -100,6 +101,8 @@ For such projects it's better to tweak the preset to use a more manual and granu
 > ```
 
 If you don't want any grouping but prefer each dependency to have its own PR you can add `github>sanity-io/renovate-config:group-recommended` to the `ignorePresets` array.
+
+If you want Renovate to rebase PRs based on its default behavior instead of only when they are conflicted, add `github>sanity-io/renovate-config:rebase-when-conflicted` to the `ignorePresets` array.
 
 ## Scaling up momentum, when a project only cares about major updates
 
