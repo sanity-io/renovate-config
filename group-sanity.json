@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Group packages owned by [Sanity](https://www.sanity.io/?utm_source=github&utm_medium=referral&utm_campaign=ecosystem-renovate-preset) into a single PR.",
+  "packageRules": [
+    {
+      "extends": ["github>sanity-io/renovate-config:packages-sanity"],
+      "groupName": "Sanity packages"
+    }
+  ]
+}
