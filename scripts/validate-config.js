@@ -3,7 +3,8 @@
 import 'zx/globals'
 
 const files = await glob(['./*.json', '.github/renovate.json'], {
-  ignore: ['package*.json'],
+  // `packages-*.json` presets only hold package matchers, and are meant to be extended inside `packageRules`
+  ignore: ['package*.json', 'packages-*.json'],
 })
 
 for (const file of files) {
