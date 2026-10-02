@@ -4,17 +4,7 @@
   "packageRules": [
     {
       "description": "Update Sanity packages without a minimum release age",
-      "matchPackageNames": [
-        "/^@portabletext\\//",
-        "/^@sanity\\//",
-        "/^get-it$/",
-        "/^groq$/",
-        "/^groq-js$/",
-        "/^next-sanity$/",
-        "/^react-rx$/",
-        "/^sanity$/",
-        "/^use-effect-event$/"
-      ],
+      "extends": ["github>sanity-io/renovate-config:packages-sanity"],
       "minimumReleaseAge": "0 days"
     },
     {

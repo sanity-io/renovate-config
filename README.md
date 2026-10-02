@@ -76,12 +76,15 @@ There's also a collection of presets you can choose to opt-in to:
 ```json
 [
   "github>sanity-io/renovate-config:automerge",
+  "github>sanity-io/renovate-config:group-sanity",
   "github>sanity-io/renovate-config:studio-v2",
   "github>sanity-io/renovate-config:studio-v3"
 ]
 ```
 
 `automerge` should only be used if the repository is setup to require PR review approvals and passing tests before merging.
+
+`group-sanity` groups updates to packages owned by Sanity (`sanity`, `@sanity/*`, `@portabletext/*`, `next-sanity`, `groq`, etc.) into a single PR, which is useful since they're often released together.
 
 While `studio-v2` and `studio-v3` use presets that are handy if you're building a [Sanity Studio](https://www.sanity.io/docs/studio) in your project.
 
