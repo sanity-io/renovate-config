@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Packages owned by Sanity",
+  "matchPackageNames": [
+    "@portabletext/**",
+    "@sanity/**",
+    "create-sanity",
+    "gatsby-source-sanity",
+    "get-it",
+    "groq",
+    "groq-js",
+    "hydrogen-sanity",
+    "mendoza",
+    "next-sanity",
+    "react-rx",
+    "sanity",
+    "use-effect-event"
+  ]
+}
