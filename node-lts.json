@@ -3,7 +3,7 @@
   "description": "Update CI images to use the latest LTS of Node.js",
   "packageRules": [
     {
-      "allowedVersions": "<=24",
+      "allowedVersions": "<=26",
       "matchPackageNames": ["cimg/node", "circleci/node", "node"],
       "schedule": ["at any time"]
     }
