@@ -1,10 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Assign `📦 deps` and `🤖 bot` labels, and for major updates `⚠️ major`. Lock file maintenance PRs get `📦 deps` and `🤖 bot` too",
+  "lockFileMaintenance": {"labels": ["📦 deps", "🤖 bot"]},
   "packageRules": [
     {"labels": ["📦 deps", "🤖 bot"], "matchPackageNames": ["*"]},
     {"labels": ["⚠️ major", "📦 deps", "🤖 bot"], "matchUpdateTypes": ["major"]}
   ],
-  "lockFileMaintenance": {"labels": ["📦 deps", "🤖 bot"]},
   "dependencyDashboardLabels": ["🤖 bot"]
 }
