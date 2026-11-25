@@ -1,0 +1,82 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Set `prPriority` so that when the open PR limit is hit, packages owned by [Sanity](https://www.sanity.io/?utm_source=github&utm_medium=referral&utm_campaign=ecosystem-renovate-preset) and the third-party packages we bump the most are opened first, followed by `dependencies`, `devDependencies`, and lastly GitHub Actions. Opt out with `ignorePresets`.",
+  "packageRules": [
+    {
+      "description": "`dependencies` are prioritized above `devDependencies`",
+      "matchDepTypes": ["dependencies", "optionalDependencies", "peerDependencies"],
+      "prPriority": 40
+    },
+    {
+      "description": "`devDependencies` are prioritized below `dependencies`",
+      "matchDepTypes": ["devDependencies"],
+      "prPriority": 20
+    },
+    {
+      "description": "Lock file maintenance is prioritized just below `devDependencies`",
+      "matchUpdateTypes": ["lockFileMaintenance"],
+      "prPriority": 10
+    },
+    {
+      "description": "Pinning is a one-time operation that makes later updates deterministic, so it isn't held back by the dependency type. GitHub Actions stay last",
+      "matchUpdateTypes": ["pin", "pinDigest"],
+      "prPriority": 60
+    },
+    {
+      "description": "GitHub Actions are always prioritized last",
+      "matchManagers": ["github-actions"],
+      "prPriority": -20
+    },
+    {
+      "description": "Third-party packages that get bumped the most often, regardless of dependency type",
+      "matchPackageNames": [
+        "/^@oxfmt\\//",
+        "/^@oxlint-tsgolint\\//",
+        "/^@oxlint\\//",
+        "/^@vitest\\//",
+        "eslint-plugin-oxlint",
+        "knip",
+        "next",
+        "oxfmt",
+        "oxlint",
+        "oxlint-tsgolint",
+        "pnpm",
+        "react",
+        "react-dom",
+        "react-is",
+        "styled-components",
+        "tsdown",
+        "turbo",
+        "vitest"
+      ],
+      "prPriority": 80
+    },
+    {
+      "description": "Vite and its plugins, regardless of dependency type",
+      "extends": ["packages:vite"],
+      "prPriority": 80
+    },
+    {
+      "description": "Packages owned by Sanity, regardless of dependency type",
+      "extends": ["github>sanity-io/renovate-config:packages-sanity"],
+      "prPriority": 100
+    },
+    {
+      "description": "More packages owned by Sanity that aren't covered by `packages-sanity`",
+      "matchPackageNames": [
+        "/^@sanity-labs\\//",
+        "/^sanity-plugin-/",
+        "content-agent",
+        "eslint-config-sanity",
+        "eslint-config-studio",
+        "is-hotkey-esm",
+        "jsonwebtoken-esm",
+        "pluralize-esm",
+        "react-props-stream",
+        "sanity-naive-html-serializer",
+        "sanity-translations-tab"
+      ],
+      "prPriority": 100
+    }
+  ]
+}

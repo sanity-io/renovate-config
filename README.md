@@ -51,6 +51,7 @@ The default preset, `github>sanity-io/renovate-config`, is a composition of the 
     "github>sanity-io/renovate-config:min-age-exceptions",
     "github>sanity-io/renovate-config:group-recommended",
     "github>sanity-io/renovate-config:group-non-major",
+    "github>sanity-io/renovate-config:pr-priority",
     "github>sanity-io/renovate-config:workarounds-esm",
     "github>sanity-io/renovate-config:workarounds-babel-plugin-react-compiler",
     "github>sanity-io/renovate-config:dedupe"
@@ -87,6 +88,35 @@ There's also a collection of presets you can choose to opt-in to:
 `group-sanity` groups updates to packages owned by Sanity (`sanity`, `@sanity/*`, `@portabletext/*`, `next-sanity`, `groq`, etc.) into a single PR, which is useful since they're often released together.
 
 While `studio-v2` and `studio-v3` use presets that are handy if you're building a [Sanity Studio](https://www.sanity.io/docs/studio) in your project.
+
+## PR priority
+
+When Renovate hits the open PR limit (`prConcurrentLimit`, `prHourlyLimit`) it decides which PRs to open first using `prPriority`. The `pr-priority` preset, included by default, makes sure the packages that matter most get bumped first:
+
+| `prPriority` | What                                                                                                                                                                                  |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `100`        | Packages owned by Sanity: `sanity`, `@sanity/*`, `@sanity-labs/*`, `@portabletext/*`, `sanity-plugin-*`, `next-sanity`, `groq`, `groq-js`, etc. Regardless of dependency type.        |
+| `80`         | Third-party packages we bump the most often: `vite` (and plugins), `vitest`, `tsdown`, `oxlint`, `oxfmt`, `react`, `react-dom`, `next`, `styled-components`, `turbo`, `knip`, `pnpm`. |
+| `60`         | Pinning updates (`pin`, `pinDigest`) outside GitHub Actions, which are one-time and make later updates deterministic.                                                                 |
+| `40`         | `dependencies`, `optionalDependencies`, and `peerDependencies`.                                                                                                                       |
+| `20`         | `devDependencies`.                                                                                                                                                                    |
+| `10`         | Lock file maintenance.                                                                                                                                                                |
+| `0`          | Anything else, such as Docker images and `packageManager`/`engines` bumps.                                                                                                            |
+| `-20`        | GitHub Actions.                                                                                                                                                                       |
+
+Vulnerability alert PRs are always sorted first by Renovate itself, and within the same priority `patch` and `minor` updates are opened before `major`. If an update is part of a group, such as `non-major`, the group gets the priority of just one of its packages, so mixed groups are not ordered reliably.
+
+To opt out, add the preset to `ignorePresets`:
+
+```json
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>sanity-io/renovate-config"],
+  "ignorePresets": ["github>sanity-io/renovate-config:pr-priority"]
+}
+```
+
+To tweak it instead, add your own `packageRules` with a `prPriority`, as rules in your config are applied after the presets.
 
 ## Scaling PR noise, gentler onboarding for large projects
 
