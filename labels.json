@@ -6,5 +6,5 @@
     {"labels": ["📦 deps", "🤖 bot"], "matchPackageNames": ["*"]},
     {"labels": ["⚠️ major", "📦 deps", "🤖 bot"], "matchUpdateTypes": ["major"]}
   ],
-  "dependencyDashboardLabels": ["🤖 bot"]
+  "dependencyDashboard": {"labels": ["🤖 bot"]}
 }
